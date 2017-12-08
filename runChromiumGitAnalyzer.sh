@@ -22,8 +22,8 @@ do
     # Start to analyze LGE commit counts.
     now="$(date +'%Y-%m-%d')"
     timestamp=$(date +"%T")
-    echo "[$timestamp] Starting checking foo@lge.com commits from $START_DATE to $now, please wait..."
-    gitinspector.py --format=html --file-types=java,c,cc,cpp,h,py,js,sql,html,txt,gn,idl,in --hard=false --since="$START_DATE" --until="$now" -T -x "email:^(?!([a-zA-Z0-9._-]+@lge.com))" $CHROMIUM_PATH > $INDEX_ORG_PATH/index-org.html
+    echo "[$timestamp] Starting checking foo@igalia.com and some foo@lge.com commits from $START_DATE to $now, please wait..."
+    gitinspector.py --format=html --file-types=** --hard=false --since="$START_DATE" --until="$now" -T -x "email:^(?!([a-zA-Z0-9._-]+@igalia.com|gyuyoung.kim@lge.com|jose.dapena@lge.com))" $CHROMIUM_PATH > $INDEX_ORG_PATH/index-org.html
     cp $INDEX_ORG_PATH/index-org.html $GIT_COUNTER_PATH/index.html
 
     # Upload the result to github.
