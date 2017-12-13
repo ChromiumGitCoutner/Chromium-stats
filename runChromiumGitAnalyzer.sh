@@ -5,7 +5,7 @@ GIT_COUNTER_PATH=$HOME/github/igaila/igalia-chromium-contribution-stats
 CHROMIUM_PATH=$HOME/chromium-stats/chromium
 GIT_INSPECTOR_PATH=$HOME/github/igaila/gitinspector-for-igalia-chromium-stats
 INDEX_ORG_PATH=$HOME/chromium-stats/log
-START_DATE="2017-01-01"
+START_DATE="2012-01-01"
 export PATH=$GIT_INSPECTOR_PATH:$PATH
 
 while :
