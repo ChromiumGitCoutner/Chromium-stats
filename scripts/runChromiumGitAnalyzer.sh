@@ -9,7 +9,7 @@
 
 # Define pathes for this tool and Chromium source.
 CHROMIUM_PATH=$HOME/chromium/Chromium/
-OUTPUT_PATH=$HOME/github/lge-chromium-stats/lge-chromium-contribution-stats/
+OUTPUT_PATH=$HOME/github/igalia-chromium-stats/igalia-chromium-contribution-stats/
 
 export IGALIA_EMAIL="@igalia.com"
 export GYUYOUNG_LGE_EMAIL="gyuyoung.kim@lge.com"
@@ -18,11 +18,12 @@ export DAPE_LGE_EMAIL="jose.dapena@lge.com"
 #while :
 #do
     # Update Chromium source code.
-    timestamp=$(date +"%T")
+    start_timestamp=$(date +"%T")
+    timestamp=$start_timestamp
     echo "[$timestamp] Start updating  Chromium trunk, please wait..."
     cd $CHROMIUM_PATH
     git pull origin master:master
-    git gc --auto
+    git subtree add --prefix=v8-log https://chromium.googlesource.com/v8/v8.git master
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to update Chromium."
 
@@ -45,6 +46,7 @@ export DAPE_LGE_EMAIL="jose.dapena@lge.com"
 
     # Restore master branch
     git reset --hard refs/original/refs/heads/master
+    git reset --hard HEAD~1
 
     # Upload the result to github.
 #    cd $OUTPUT_PATH
@@ -55,7 +57,8 @@ export DAPE_LGE_EMAIL="jose.dapena@lge.com"
 #    git push origin master:master
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to upload new result!"
-    timestamp=$(date +"%T")
+    echo "- StartTime: $start_timestamp"
+    echo "- EndTime: $timestamp"
 #    sleep 8h
 #done
 
