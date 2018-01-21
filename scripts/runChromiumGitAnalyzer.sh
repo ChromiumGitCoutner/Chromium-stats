@@ -1,12 +1,5 @@
 #!/bin/bash
 
-#if [ -z "$1" ]
-#    then
-#        echo "No email domain."
-#        echo "Usage : ./runChromiumGitAnalyzer.sh [email domain] (i.e. ./runChromiumGitAnalyzer.sh @lge.com, @igalia.com)"
-#        exit 1
-#fi
-
 # Define pathes for this tool and Chromium source.
 CHROMIUM_PATH=$HOME/chromium/Chromium/
 OUTPUT_PATH=$HOME/github/igalia-chromium-stats/igalia-chromium-contribution-stats/
@@ -30,7 +23,7 @@ export DAPE_LGE_EMAIL="jose.dapena@lge.com"
     # Start to analyze commit counts.
     now="$(date +'%Y-%m-%d')"
     timestamp=$(date +"%T")
-    echo "[$timestamp] Starting checking foo$1 commits until $now, please wait..."
+    echo "[$timestamp] Starting checking Igalia commits until $now, please wait..."
     git filter-branch -f --commit-filter '
         if echo "$GIT_AUTHOR_EMAIL" | grep -q "$IGALIA_EMAIL\|$GYUYOUNG_LGE_EMAIL\|$DAPE_LGE_EMAIL";
         then
@@ -49,12 +42,12 @@ export DAPE_LGE_EMAIL="jose.dapena@lge.com"
     git reset --hard HEAD~1
 
     # Upload the result to github.
-#    cd $OUTPUT_PATH
-#    git add .
-#    git commit -m "Update the new result by bot"
-#    git fetch origin master
-#    git rebase origin/master
-#    git push origin master:master
+    cd $OUTPUT_PATH
+    git add .
+    git commit -m "Update the new result by bot"
+    git fetch origin master
+    git rebase origin/master
+    git push origin master:master
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to upload new result!"
     echo "- StartTime: $start_timestamp"
