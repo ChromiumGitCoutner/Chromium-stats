@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - v8</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body { padding-top: 60px; }
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - v8</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../best_authors.html'>Authors</a>
+</li>
+<li class=''>
+<a href='../../../files/by_date.html'>Files</a>
+</li>
+<li class='active'>
+<a href='../../../lines/by_date.html'>Lines</a>
+</li>
+<li class=''>
+<a href='../../../comments/by_date.html'>Comments</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class=''>
+<a href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class='active'>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class=''>
+<a href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class=''>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>Changed lines by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "kschimpf","type": "spline","data": [ [ 1490381215000,10 ],[ 1490390856000,19 ],[ 1490400000000,106 ],[ 1490406849000,106 ],[ 1490486400000,106 ],[ 1490648619000,126 ],[ 1490648977000,135 ],[ 1490711262000,169 ],[ 1490724852000,177 ],[ 1490725117000,192 ],[ 1490731210000,304 ],[ 1490736136000,317 ],[ 1490738953000,326 ],[ 1490827118000,408 ],[ 1490908769000,417 ],[ 1490973630000,421 ],[ 1490973750000,425 ],[ 1490973871000,463 ],[ 1490996721000,472 ],[ 1490998779000,482 ],[ 1491004800000,482 ],[ 1491091200000,482 ],[ 1491177600000,482 ],[ 1491326768000,504 ],[ 1491350400000,504 ],[ 1491436800000,504 ],[ 1491523200000,504 ],[ 1491609600000,504 ],[ 1491696000000,504 ],[ 1491782400000,504 ],[ 1491868800000,504 ],[ 1491955200000,504 ],[ 1492041600000,504 ],[ 1492128000000,504 ],[ 1492214400000,504 ],[ 1492300800000,504 ],[ 1492387200000,504 ],[ 1492473600000,504 ],[ 1492560000000,504 ],[ 1492646400000,504 ],[ 1492732800000,504 ],[ 1492819200000,504 ],[ 1492905600000,504 ],[ 1492992000000,504 ],[ 1493078400000,504 ],[ 1493164800000,504 ],[ 1493251200000,504 ],[ 1493394423000,512 ],[ 1493424000000,512 ],[ 1493510400000,512 ],[ 1493596800000,512 ],[ 1493683200000,512 ],[ 1493769600000,512 ],[ 1493856000000,512 ],[ 1493942400000,512 ],[ 1494100642000,520 ],[ 1494115200000,520 ],[ 1494267052000,790 ],[ 1494288000000,790 ],[ 1494374400000,790 ],[ 1494460800000,790 ],[ 1494547200000,790 ],[ 1494633600000,790 ],[ 1494720000000,790 ],[ 1494806400000,790 ],[ 1494892800000,790 ],[ 1494979200000,790 ],[ 1495065600000,790 ],[ 1495152000000,790 ],[ 1495238400000,790 ],[ 1495324800000,790 ],[ 1495411200000,790 ],[ 1495497600000,790 ],[ 1495660864000,1063 ],[ 1495670400000,1063 ],[ 1495756800000,1063 ],[ 1495843200000,1063 ],[ 1495929600000,1063 ],[ 1496081905000,1176 ],[ 1496081973000,1183 ],[ 1496102400000,1183 ],[ 1496188800000,1183 ],[ 1496275200000,1183 ],[ 1496361600000,1183 ],[ 1496448000000,1183 ],[ 1496534400000,1183 ],[ 1496620800000,1183 ],[ 1496769583000,1234 ],[ 1496793600000,1234 ],[ 1496938712000,1489 ],[ 1496966400000,1489 ],[ 1497052800000,1489 ],[ 1497139200000,1489 ],[ 1497225600000,1489 ],[ 1497312000000,1489 ],[ 1497398400000,1489 ],[ 1497484800000,1489 ],[ 1497571200000,1489 ],[ 1497657600000,1489 ],[ 1497744000000,1489 ],[ 1497830400000,1489 ],[ 1497916800000,1489 ],[ 1498003200000,1489 ],[ 1498169664000,1977 ],[ 1498249023000,2464 ] ] }] };
+        
+        window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.changed_lines_by_author_by_date"></div>
+<small>
+<center>5 best authors shown</center>
+</small>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

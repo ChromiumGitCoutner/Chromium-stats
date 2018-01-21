@@ -1,2 +1,2 @@
 # Chromium-stats
-This is a tool to track Igalia's Chromium contribution stats
+LGE and Igalia git commit stats in Chromium

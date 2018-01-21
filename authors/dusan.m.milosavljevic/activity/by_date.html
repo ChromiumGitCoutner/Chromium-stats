@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - v8</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body { padding-top: 60px; }
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - v8</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class='active'>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../best_authors.html'>Authors</a>
+</li>
+<li class=''>
+<a href='../../../files/by_date.html'>Files</a>
+</li>
+<li class=''>
+<a href='../../../lines/by_date.html'>Lines</a>
+</li>
+<li class=''>
+<a href='../../../comments/by_date.html'>Comments</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class='active'>
+<a href='by_date.html'>Activity by date</a>
+</li>
+<li class=''>
+<a href='hour_of_day.html'>Hour of day</a>
+</li>
+<li class=''>
+<a href='day_of_week.html'>Day of week</a>
+</li>
+<li class=''>
+<a href='hour_of_week.html'>Hour of week</a>
+</li>
+<li class=''>
+<a href='month_of_year.html'>Month of year</a>
+</li>
+<li class=''>
+<a href='year.html'>Year</a>
+</li>
+<li class=''>
+<a href='year_month.html'>Year and month</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header pagination-centered'>
+<h1>Activity by date</h1>
+<h3>dusan.m.milosavljevic &lt;dusan.m.milosavljevic@gmail.com&gt;</h3>
+</div>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_date" },"subtitle": {  },"series": [{ "name": "Commits by date","type": "column","data": [ [ 1441540883000,1 ],[ 1441584000000,0 ],[ 1441749292000,1 ],[ 1441756800000,0 ],[ 1441843200000,0 ],[ 1441929600000,0 ],[ 1442016000000,0 ],[ 1442102400000,0 ],[ 1442188800000,0 ],[ 1442275200000,0 ],[ 1442361600000,0 ],[ 1442448000000,0 ],[ 1442534400000,0 ],[ 1442620800000,0 ],[ 1442707200000,0 ],[ 1442793600000,0 ],[ 1442880000000,0 ],[ 1442966400000,0 ],[ 1443052800000,0 ],[ 1443139200000,0 ],[ 1443225600000,0 ],[ 1443312000000,0 ],[ 1443398400000,0 ],[ 1443547424000,1 ],[ 1443571200000,0 ],[ 1443657600000,0 ],[ 1443744000000,0 ],[ 1443830400000,0 ],[ 1443916800000,0 ],[ 1444063494000,1 ],[ 1444065076000,1 ],[ 1444089600000,0 ],[ 1444176000000,0 ],[ 1444262400000,0 ],[ 1444348800000,0 ],[ 1444435200000,0 ],[ 1444521600000,0 ],[ 1444694400000,0 ],[ 1444695330000,1 ],[ 1444780800000,0 ],[ 1444867200000,0 ],[ 1444953600000,0 ],[ 1445040000000,0 ],[ 1445126400000,0 ],[ 1445212800000,0 ],[ 1445378026000,1 ],[ 1445385600000,0 ],[ 1445472000000,0 ],[ 1445558400000,0 ],[ 1445644800000,0 ],[ 1445731200000,0 ],[ 1445817600000,0 ],[ 1445904000000,0 ],[ 1446053531000,1 ],[ 1446076800000,0 ],[ 1446163200000,0 ],[ 1446249600000,0 ],[ 1446336000000,0 ],[ 1446422400000,0 ],[ 1446508800000,0 ],[ 1446670970000,1 ],[ 1446681600000,0 ],[ 1446768000000,0 ],[ 1446854400000,0 ],[ 1446940800000,0 ],[ 1447027200000,0 ],[ 1447113600000,0 ],[ 1447200000000,0 ],[ 1447286400000,0 ],[ 1447372800000,0 ],[ 1447459200000,0 ],[ 1447545600000,0 ],[ 1447716226000,1 ],[ 1447721382000,1 ],[ 1447800744000,1 ],[ 1447801826000,1 ],[ 1447804800000,0 ],[ 1447891200000,0 ],[ 1448028018000,1 ],[ 1448064000000,0 ],[ 1448150400000,0 ],[ 1448236800000,0 ],[ 1448323200000,0 ],[ 1448409600000,0 ],[ 1448553340000,1 ],[ 1448582400000,0 ],[ 1448668800000,0 ],[ 1448755200000,0 ],[ 1448841600000,0 ],[ 1448978588000,1 ],[ 1449007076000,1 ],[ 1449008173000,1 ],[ 1449014400000,0 ],[ 1449100800000,0 ],[ 1449234768000,1 ],[ 1449273600000,0 ],[ 1449360000000,0 ],[ 1449531349000,1 ],[ 1449614729000,1 ],[ 1449671287000,1 ],[ 1449750219000,1 ],[ 1449878400000,0 ],[ 1449890229000,1 ],[ 1449964800000,0 ],[ 1450051200000,0 ],[ 1450137600000,0 ],[ 1450224000000,0 ],[ 1450310400000,0 ],[ 1450455122000,1 ],[ 1450483200000,0 ],[ 1450569600000,0 ],[ 1450656000000,0 ],[ 1450742400000,0 ],[ 1450828800000,0 ],[ 1450915200000,0 ],[ 1451001600000,0 ],[ 1451088000000,0 ],[ 1451174400000,0 ],[ 1451260800000,0 ],[ 1451347200000,0 ],[ 1451433600000,0 ],[ 1451520000000,0 ],[ 1451606400000,0 ],[ 1451692800000,0 ],[ 1451779200000,0 ],[ 1451865600000,0 ],[ 1451952000000,0 ],[ 1452111848000,1 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+        
+        window.chart_charts.activity_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.activity_by_date"></div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
