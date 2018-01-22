@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Define pathes for this tool and Chromium source.
-CHROMIUM_PATH=$HOME/chromium/Chromium/
-OUTPUT_PATH=$HOME/github/igalia-chromium-stats/igalia-chromium-contribution-stats/
+CHROMIUM_PATH=$HOME/chromium-stats/chromium/Chromium/
+OUTPUT_PATH=$HOME/github/Igalia-Chromium-Stats/igalia-chromium-contribution-stats/
 
 export IGALIA_EMAIL="@igalia.com"
 export GYUYOUNG_LGE_EMAIL="gyuyoung.kim@lge.com"

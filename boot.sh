@@ -1,3 +1,0 @@
-#!/bin/bash
-echo Starting Chromium git analyzer...
-screen -d -m -t gyuyoung ./runChromiumGitAnalyzer.sh gyuyoung
