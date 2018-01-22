@@ -6,10 +6,13 @@ OUTPUT_PATH=$HOME/github/Igalia-Chromium-Stats/igalia-chromium-contribution-stat
 
 export IGALIA_EMAIL="@igalia.com"
 export GYUYOUNG_LGE_EMAIL="gyuyoung.kim@lge.com"
+export GYUYOUNG_SAMSUNG_EMAIL="gyuyoung.kim@samsung.com"
 export DAPE_LGE_EMAIL="jose.dapena@lge.com"
+export MAKSIM_INTEL_EMAIL="maksim.sisov@intel.com"
+export TONIKITOO_WEBKIT_EMAIL="tonikitoo@webkit.org"
 
-#while :
-#do
+while :
+do
     # Update Chromium source code.
     start_timestamp=$(date +"%T")
     timestamp=$start_timestamp
@@ -25,7 +28,7 @@ export DAPE_LGE_EMAIL="jose.dapena@lge.com"
     timestamp=$(date +"%T")
     echo "[$timestamp] Starting checking Igalia commits until $now, please wait..."
     git filter-branch -f --commit-filter '
-        if echo "$GIT_AUTHOR_EMAIL" | grep -q "$IGALIA_EMAIL\|$GYUYOUNG_LGE_EMAIL\|$DAPE_LGE_EMAIL";
+        if echo "$GIT_AUTHOR_EMAIL" | grep -q "$IGALIA_EMAIL\|$GYUYOUNG_LGE_EMAIL\|$DAPE_LGE_EMAIL\|$MAKSIM_INTEL_EMAIL\|$TONIKITOO_WEBKIT_EMAIL\|$GYUYOUNG_SAMSUNG_EMAIL";
         then
             git commit-tree "$@";
         else
@@ -52,8 +55,8 @@ export DAPE_LGE_EMAIL="jose.dapena@lge.com"
     echo "[$timestamp] Finish to upload new result!"
     echo "- StartTime: $start_timestamp"
     echo "- EndTime: $timestamp"
-#    sleep 8h
-#done
+    sleep 16h
+done
 
 skip_commit() {
     shift;
