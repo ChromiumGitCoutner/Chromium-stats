@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Define pathes for this tool and Chromium source.
-CHROMIUM_PATH=$HOME/chromium-stats/chromium/Chromium/
-OUTPUT_PATH=$HOME/github/Igalia-Chromium-Stats/igalia-chromium-contribution-stats/
+CHROMIUM_PATH=$HOME/chromium-stats/Chromium/
+OUTPUT_PATH=$HOME/github/igalia-chromium-stats/igalia-chromium-contribution-stats
 
 export IGALIA_EMAIL="@igalia.com"
 export GYUYOUNG_LGE_EMAIL="gyuyoung.kim@lge.com"
@@ -50,7 +50,7 @@ do
     git commit -m "Update the new result by bot"
     git fetch origin master
     git rebase origin/master
-    git push origin master:master
+#    git push origin master:master
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to upload new result!"
     echo "- StartTime: $start_timestamp"
