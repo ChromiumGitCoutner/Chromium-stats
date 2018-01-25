@@ -55,7 +55,7 @@ body { padding-top: 60px; }
 <li class=''>
 <a href='by_date.html'>Activity by date</a>
 </li>
-<li class=''>
+<li class='active'>
 <a href='hour_of_day.html'>Hour of day</a>
 </li>
 <li class=''>
@@ -64,7 +64,7 @@ body { padding-top: 60px; }
 <li class=''>
 <a href='hour_of_week.html'>Hour of week</a>
 </li>
-<li class='active'>
+<li class=''>
 <a href='month_of_year.html'>Month of year</a>
 </li>
 <li class=''>
@@ -77,55 +77,91 @@ body { padding-top: 60px; }
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header pagination-centered'>
-<h1>Month of year</h1>
-<h3>Maksim Sisov(including maksim.sisov@intel.com) &lt;msisov@igalia.com&gt;</h3>
+<h1>Hour of day</h1>
+<h3>Antonio Gomes(including tonikitoo@webkit.org) &lt;tonikitoo@igalia.com&gt;</h3>
 </div>
 </div>
 <table class='table table-bordered table-condensed'>
 <tr>
-<th>Month</th>
-<th>Jan</th>
-<th>Feb</th>
-<th>Mar</th>
-<th>Apr</th>
-<th>May</th>
-<th>Jun</th>
-<th>Jul</th>
-<th>Aug</th>
-<th>Sep</th>
-<th>Oct</th>
-<th>Nov</th>
-<th>Dec</th>
+<th>Hour</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
+<th>16</th>
+<th>17</th>
+<th>18</th>
+<th>19</th>
+<th>20</th>
+<th>21</th>
+<th>22</th>
+<th>23</th>
 </tr>
 <tr>
 <th>Commits</th>
+<td>12</td>
 <td>10</td>
-<td>5</td>
-<td>6</td>
-<td>3</td>
-<td>9</td>
-<td>16</td>
-<td>9</td>
-<td>9</td>
-<td>24</td>
+<td>7</td>
+<td>18</td>
+<td>18</td>
 <td>8</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>7</td>
 <td>11</td>
-<td>13</td>
+<td>11</td>
+<td>26</td>
+<td>30</td>
+<td>39</td>
+<td>32</td>
+<td>25</td>
+<td>18</td>
+<td>39</td>
+<td>35</td>
+<td>20</td>
+<td>9</td>
+<td>4</td>
 </tr>
 <tr>
 <th>Percentage</th>
-<td>8.1</td>
-<td>4.1</td>
-<td>4.9</td>
-<td>2.4</td>
-<td>7.3</td>
-<td>13.0</td>
-<td>7.3</td>
-<td>7.3</td>
-<td>19.5</td>
+<td>3.1</td>
+<td>2.6</td>
+<td>1.8</td>
+<td>4.7</td>
+<td>4.7</td>
+<td>2.1</td>
+<td>0.8</td>
+<td>0.3</td>
+<td>0.5</td>
+<td>0.3</td>
+<td>1.8</td>
+<td>2.8</td>
+<td>2.8</td>
+<td>6.7</td>
+<td>7.8</td>
+<td>10.1</td>
+<td>8.3</td>
 <td>6.5</td>
-<td>8.9</td>
-<td>10.6</td>
+<td>4.7</td>
+<td>10.1</td>
+<td>9.1</td>
+<td>5.2</td>
+<td>2.3</td>
+<td>1.0</td>
 </tr>
 </table>
                 <script type="text/javascript">
@@ -134,15 +170,15 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 10,5,6,3,9,16,9,9,24,8,11,13 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 12,10,7,18,18,8,3,1,2,1,7,11,11,26,30,39,32,25,18,39,35,20,9,4 ] }] };
         
-        window.chart_charts.activity_by_month = new Highcharts.Chart(options);
+        window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 
           };
                 })()
         </script>
 
-<div id="charts.activity_by_month"></div>
+<div id="charts.activity_by_hour"></div>
 </div>
 </div>
 

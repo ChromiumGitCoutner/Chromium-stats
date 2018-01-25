@@ -50,7 +50,7 @@ do
     git commit -m "Update the new result by bot"
     git fetch origin master
     git rebase origin/master
-#    git push origin master:master
+    git push origin master:master
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to upload new result!"
     echo "- StartTime: $start_timestamp"
