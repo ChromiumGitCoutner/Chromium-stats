@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - Chromium</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body { padding-top: 60px; }
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - Chromium</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../best_authors.html'>Authors</a>
+</li>
+<li class=''>
+<a href='../../../files/by_date.html'>Files</a>
+</li>
+<li class=''>
+<a href='../../../lines/by_date.html'>Lines</a>
+</li>
+<li class=''>
+<a href='../../../comments/by_date.html'>Comments</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class=''>
+<a href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class=''>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class='active'>
+<a href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class=''>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>Lines added by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.insertions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "sverrir@chromium.org","type": "spline","data": [ [ 1234281918000,6 ],[ 1234310400000,6 ],[ 1234396800000,6 ],[ 1234483200000,6 ],[ 1234569600000,6 ],[ 1234656000000,6 ],[ 1234742400000,6 ],[ 1234828800000,6 ],[ 1234915200000,6 ],[ 1235001600000,6 ],[ 1235088000000,6 ],[ 1235174400000,6 ],[ 1235260800000,6 ],[ 1235347200000,6 ],[ 1235433600000,6 ],[ 1235588480000,18 ],[ 1235606400000,18 ],[ 1235692800000,18 ],[ 1235863163000,57 ],[ 1235865600000,57 ],[ 1235952000000,57 ],[ 1236038400000,57 ],[ 1236124800000,57 ],[ 1236211200000,57 ],[ 1236297600000,57 ],[ 1236384000000,57 ],[ 1236470400000,57 ],[ 1236556800000,57 ],[ 1236643200000,57 ],[ 1236729600000,57 ],[ 1236816000000,57 ],[ 1236902400000,57 ],[ 1236988800000,57 ],[ 1237075200000,57 ],[ 1237161600000,57 ],[ 1237248000000,57 ],[ 1237334400000,57 ],[ 1237496804000,59 ],[ 1237507200000,59 ],[ 1237593600000,59 ],[ 1237680000000,59 ],[ 1237766400000,59 ],[ 1237852800000,59 ],[ 1237939200000,59 ],[ 1238078347000,74 ],[ 1238092128000,75 ],[ 1238112000000,75 ],[ 1238198400000,75 ],[ 1238284800000,75 ],[ 1238371200000,75 ],[ 1238510083000,111 ],[ 1238531973000,117 ],[ 1238544000000,117 ],[ 1238630400000,117 ],[ 1238716800000,117 ],[ 1238803200000,117 ],[ 1238889600000,117 ],[ 1238976000000,117 ],[ 1239062400000,117 ],[ 1239148800000,117 ],[ 1239235200000,117 ],[ 1239321600000,117 ],[ 1239408000000,117 ],[ 1239494400000,117 ],[ 1239580800000,117 ],[ 1239667200000,117 ],[ 1239753600000,117 ],[ 1239840000000,117 ],[ 1239926400000,117 ],[ 1240012800000,117 ],[ 1240099200000,117 ],[ 1240185600000,117 ],[ 1240272000000,117 ],[ 1240439508000,130 ],[ 1240444800000,130 ],[ 1240531200000,130 ],[ 1240617600000,130 ],[ 1240704000000,130 ],[ 1240790400000,130 ],[ 1240876800000,130 ],[ 1240963200000,130 ],[ 1241049600000,130 ],[ 1241136000000,130 ],[ 1241222400000,130 ],[ 1241308800000,130 ],[ 1241395200000,130 ],[ 1241481600000,130 ],[ 1241568000000,130 ],[ 1241654400000,130 ],[ 1241740800000,130 ],[ 1241827200000,130 ],[ 1241913600000,130 ],[ 1242000000000,130 ],[ 1242086400000,130 ],[ 1242172800000,130 ],[ 1242259200000,130 ],[ 1242345600000,130 ],[ 1242432000000,130 ],[ 1242518400000,130 ],[ 1242604800000,130 ],[ 1242691200000,130 ],[ 1242777600000,130 ],[ 1242864000000,130 ],[ 1242950400000,130 ],[ 1243036800000,130 ],[ 1243123200000,130 ],[ 1243209600000,130 ],[ 1243296000000,130 ],[ 1243382400000,130 ],[ 1243468800000,130 ],[ 1243555200000,130 ],[ 1243641600000,130 ],[ 1243728000000,130 ],[ 1243814400000,130 ],[ 1243900800000,130 ],[ 1243987200000,130 ],[ 1244073600000,130 ],[ 1244160000000,130 ],[ 1244246400000,130 ],[ 1244332800000,130 ],[ 1244419200000,130 ],[ 1244505600000,130 ],[ 1244592000000,130 ],[ 1244678400000,130 ],[ 1244764800000,130 ],[ 1244851200000,130 ],[ 1244937600000,130 ],[ 1245024000000,130 ],[ 1245110400000,130 ],[ 1245196800000,130 ],[ 1245283200000,130 ],[ 1245369600000,130 ],[ 1245456000000,130 ],[ 1245542400000,130 ],[ 1245628800000,130 ],[ 1245715200000,130 ],[ 1245801600000,130 ],[ 1245888000000,130 ],[ 1245974400000,130 ],[ 1246060800000,130 ],[ 1246147200000,130 ],[ 1246233600000,130 ],[ 1246320000000,130 ],[ 1246406400000,130 ],[ 1246492800000,130 ],[ 1246579200000,130 ],[ 1246665600000,130 ],[ 1246752000000,130 ],[ 1246838400000,130 ],[ 1246924800000,130 ],[ 1247011200000,130 ],[ 1247097600000,130 ],[ 1247184000000,130 ],[ 1247270400000,130 ],[ 1247356800000,130 ],[ 1247497098000,204 ],[ 1247501468000,446 ],[ 1247529600000,446 ],[ 1247666846000,447 ],[ 1247765038000,663 ] ] }] };
+        
+        window.chart_charts.insertions_by_author_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.insertions_by_author_by_date"></div>
+<small>
+<center>5 best authors shown</center>
+</small>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

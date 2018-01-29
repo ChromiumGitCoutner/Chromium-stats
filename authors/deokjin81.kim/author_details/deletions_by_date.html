@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - Chromium</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body { padding-top: 60px; }
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - Chromium</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../best_authors.html'>Authors</a>
+</li>
+<li class=''>
+<a href='../../../files/by_date.html'>Files</a>
+</li>
+<li class=''>
+<a href='../../../lines/by_date.html'>Lines</a>
+</li>
+<li class=''>
+<a href='../../../comments/by_date.html'>Comments</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class=''>
+<a href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class=''>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class=''>
+<a href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class='active'>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>Lines deleted by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "deokjin81.kim","type": "spline","data": [ [ 1451939002000,0 ],[ 1451952000000,0 ],[ 1452038400000,0 ],[ 1452124800000,0 ],[ 1452211200000,0 ],[ 1452297600000,0 ],[ 1452384000000,0 ],[ 1452470400000,0 ],[ 1452556800000,0 ],[ 1452643200000,0 ],[ 1452729600000,0 ],[ 1452816000000,0 ],[ 1452902400000,0 ],[ 1452988800000,0 ],[ 1453075200000,0 ],[ 1453241502000,32 ],[ 1453299651000,33 ],[ 1453334400000,33 ],[ 1453420800000,33 ],[ 1453507200000,33 ],[ 1453593600000,33 ],[ 1453680000000,33 ],[ 1453766400000,33 ],[ 1453852800000,33 ],[ 1453939200000,33 ],[ 1454025600000,33 ],[ 1454112000000,33 ],[ 1454198400000,33 ],[ 1454284800000,33 ],[ 1454371200000,33 ],[ 1454457600000,33 ],[ 1454544000000,33 ],[ 1454630400000,33 ],[ 1454716800000,33 ],[ 1454803200000,33 ],[ 1454889600000,33 ],[ 1454976000000,33 ],[ 1455062400000,33 ],[ 1455148800000,33 ],[ 1455235200000,33 ],[ 1455321600000,33 ],[ 1455408000000,33 ],[ 1455494400000,33 ],[ 1455580800000,33 ],[ 1455667200000,33 ],[ 1455753600000,33 ],[ 1455840000000,33 ],[ 1455926400000,33 ],[ 1456012800000,33 ],[ 1456099200000,33 ],[ 1456185600000,33 ],[ 1456272000000,33 ],[ 1456358400000,33 ],[ 1456444800000,33 ],[ 1456531200000,33 ],[ 1456617600000,33 ],[ 1456704000000,33 ],[ 1456790400000,33 ],[ 1456876800000,33 ],[ 1456963200000,33 ],[ 1457049600000,33 ],[ 1457136000000,33 ],[ 1457222400000,33 ],[ 1457308800000,33 ],[ 1457395200000,33 ],[ 1457481600000,33 ],[ 1457568000000,33 ],[ 1457654400000,33 ],[ 1457740800000,33 ],[ 1457827200000,33 ],[ 1457913600000,33 ],[ 1458000000000,33 ],[ 1458086400000,33 ],[ 1458172800000,33 ],[ 1458259200000,33 ],[ 1458345600000,33 ],[ 1458432000000,33 ],[ 1458518400000,33 ],[ 1458604800000,33 ],[ 1458691200000,33 ],[ 1458777600000,33 ],[ 1458864000000,33 ],[ 1458950400000,33 ],[ 1459036800000,33 ],[ 1459123200000,33 ],[ 1459209600000,33 ],[ 1459296000000,33 ],[ 1459382400000,33 ],[ 1459514634000,92 ],[ 1459555200000,92 ],[ 1459641600000,92 ],[ 1459728000000,92 ],[ 1459814400000,92 ],[ 1459900800000,92 ],[ 1460033513000,97 ],[ 1460073600000,97 ],[ 1460160000000,97 ],[ 1460246400000,97 ],[ 1460332800000,97 ],[ 1460419200000,97 ],[ 1460505600000,97 ],[ 1460592000000,97 ],[ 1460678400000,97 ],[ 1460764800000,97 ],[ 1460851200000,97 ],[ 1460937600000,97 ],[ 1461024000000,97 ],[ 1461110400000,97 ],[ 1461196800000,97 ],[ 1461283200000,97 ],[ 1461369600000,97 ],[ 1461456000000,97 ],[ 1461542400000,97 ],[ 1461628800000,97 ],[ 1461715200000,97 ],[ 1461801600000,97 ],[ 1461888000000,97 ],[ 1461974400000,97 ],[ 1462060800000,97 ],[ 1462147200000,97 ],[ 1462233600000,97 ],[ 1462320000000,97 ],[ 1462406400000,97 ],[ 1462492800000,97 ],[ 1462579200000,97 ],[ 1462665600000,97 ],[ 1462752000000,97 ],[ 1462838400000,97 ],[ 1462924800000,97 ],[ 1463088239000,98 ],[ 1463097600000,98 ],[ 1463184000000,98 ],[ 1463270400000,98 ],[ 1463356800000,98 ],[ 1463443200000,98 ],[ 1463529600000,98 ],[ 1463673126000,114 ],[ 1463702400000,114 ],[ 1463788800000,114 ],[ 1463875200000,114 ],[ 1464007799000,132 ],[ 1464048000000,132 ],[ 1464134400000,132 ],[ 1464220800000,132 ],[ 1464362540000,280 ] ] }] };
+        
+        window.chart_charts.deletions_by_author_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.deletions_by_author_by_date"></div>
+<small>
+<center>5 best authors shown</center>
+</small>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

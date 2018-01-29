@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - Chromium</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body { padding-top: 60px; }
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - Chromium</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../best_authors.html'>Authors</a>
+</li>
+<li class=''>
+<a href='../../../files/by_date.html'>Files</a>
+</li>
+<li class=''>
+<a href='../../../lines/by_date.html'>Lines</a>
+</li>
+<li class=''>
+<a href='../../../comments/by_date.html'>Comments</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class='active'>
+<a href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class=''>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class=''>
+<a href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class=''>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>Commits by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "jif@chromium.org","type": "spline","data": [ [ 1394484168000,1 ],[ 1394496000000,1 ],[ 1394650320000,2 ],[ 1394668800000,2 ],[ 1394755200000,2 ],[ 1394841600000,2 ],[ 1394928000000,2 ],[ 1395014400000,2 ],[ 1395100800000,2 ],[ 1395187200000,2 ],[ 1395273600000,2 ],[ 1395360000000,2 ],[ 1395446400000,2 ],[ 1395532800000,2 ],[ 1395619200000,2 ],[ 1395705600000,2 ],[ 1395792000000,2 ],[ 1395878400000,2 ],[ 1395964800000,2 ],[ 1396051200000,2 ],[ 1396137600000,2 ],[ 1396224000000,2 ],[ 1396310400000,2 ],[ 1396396800000,2 ],[ 1396483200000,2 ],[ 1396569600000,2 ],[ 1396656000000,2 ],[ 1396742400000,2 ],[ 1396828800000,2 ],[ 1396977808000,3 ],[ 1397061710000,4 ],[ 1397136265000,5 ],[ 1397161278000,6 ],[ 1397240792000,7 ],[ 1397260800000,7 ],[ 1397347200000,7 ],[ 1397433600000,7 ],[ 1397592744000,8 ],[ 1397606400000,8 ],[ 1397755253000,9 ],[ 1397779200000,9 ],[ 1397865600000,9 ],[ 1397952000000,9 ],[ 1398038400000,9 ],[ 1398209813000,10 ],[ 1398211200000,10 ],[ 1398297600000,10 ],[ 1398384000000,10 ],[ 1398470400000,10 ],[ 1398556800000,10 ],[ 1398693089000,11 ],[ 1398693642000,12 ],[ 1398727464000,13 ],[ 1398729600000,13 ],[ 1398816000000,13 ],[ 1398902400000,13 ],[ 1398988800000,13 ],[ 1399075200000,13 ],[ 1399161600000,13 ],[ 1399248000000,13 ],[ 1399334400000,13 ],[ 1399420800000,13 ],[ 1399507200000,13 ],[ 1399593600000,13 ],[ 1399680000000,13 ],[ 1399766400000,13 ],[ 1399928240000,14 ],[ 1399939200000,14 ],[ 1400025600000,14 ],[ 1400112000000,14 ],[ 1400269400000,15 ],[ 1400284800000,15 ],[ 1400371200000,15 ],[ 1400503358000,16 ],[ 1400544000000,16 ],[ 1400630400000,16 ],[ 1400716800000,16 ],[ 1400803200000,16 ],[ 1400889600000,16 ],[ 1400976000000,16 ],[ 1401062400000,16 ],[ 1401149440000,17 ],[ 1401235200000,17 ],[ 1401321600000,17 ],[ 1401408000000,17 ],[ 1401494400000,17 ],[ 1401580800000,17 ],[ 1401667200000,17 ],[ 1401753600000,17 ],[ 1401840000000,17 ],[ 1401926400000,17 ],[ 1402012800000,17 ],[ 1402099200000,17 ],[ 1402185600000,17 ],[ 1402272000000,17 ],[ 1402358400000,17 ],[ 1402444800000,17 ],[ 1402576995000,18 ],[ 1402617600000,18 ],[ 1402704000000,18 ],[ 1402790400000,18 ],[ 1402876800000,18 ],[ 1402963200000,18 ],[ 1403049600000,18 ],[ 1403136000000,18 ],[ 1403222400000,18 ],[ 1403308800000,18 ],[ 1403395200000,18 ],[ 1403481600000,18 ],[ 1403597864000,19 ],[ 1403613365000,20 ],[ 1403654400000,20 ],[ 1403740800000,20 ],[ 1403827200000,20 ],[ 1403913600000,20 ],[ 1404000000000,20 ],[ 1404086400000,20 ],[ 1404172800000,20 ],[ 1404259200000,20 ],[ 1404412908000,21 ],[ 1404479122000,22 ],[ 1404518400000,22 ],[ 1404604800000,22 ],[ 1404691200000,22 ],[ 1404777600000,22 ],[ 1404864000000,22 ],[ 1404950400000,22 ],[ 1405036800000,22 ],[ 1405123200000,22 ],[ 1405209600000,22 ],[ 1405296000000,22 ],[ 1405382400000,22 ],[ 1405468800000,22 ],[ 1405555200000,22 ],[ 1405677171000,23 ],[ 1405693220000,24 ] ] }] };
+        
+        window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.commits_sum_by_author_by_date"></div>
+<small>
+<center>5 best authors shown</center>
+</small>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

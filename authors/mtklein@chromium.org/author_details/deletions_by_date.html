@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - Chromium</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body { padding-top: 60px; }
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - Chromium</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../best_authors.html'>Authors</a>
+</li>
+<li class=''>
+<a href='../../../files/by_date.html'>Files</a>
+</li>
+<li class=''>
+<a href='../../../lines/by_date.html'>Lines</a>
+</li>
+<li class=''>
+<a href='../../../comments/by_date.html'>Comments</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class=''>
+<a href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class=''>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class=''>
+<a href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class='active'>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>Lines deleted by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "mtklein@chromium.org","type": "spline","data": [ [ 1395774038000,2 ],[ 1395843866000,4 ],[ 1395957300000,6 ],[ 1395964800000,6 ],[ 1396051200000,6 ],[ 1396137600000,6 ],[ 1396224000000,6 ],[ 1396310400000,6 ],[ 1396396800000,6 ],[ 1396483200000,6 ],[ 1396569600000,6 ],[ 1396656000000,6 ],[ 1396742400000,6 ],[ 1396828800000,6 ],[ 1396915200000,6 ],[ 1397001600000,6 ],[ 1397088000000,6 ],[ 1397174400000,6 ],[ 1397260800000,6 ],[ 1397347200000,6 ],[ 1397433600000,6 ],[ 1397520000000,6 ],[ 1397606400000,6 ],[ 1397692800000,6 ],[ 1397779200000,6 ],[ 1397865600000,6 ],[ 1397952000000,6 ],[ 1398038400000,6 ],[ 1398124800000,6 ],[ 1398211200000,6 ],[ 1398297600000,6 ],[ 1398384000000,6 ],[ 1398470400000,6 ],[ 1398556800000,6 ],[ 1398643200000,6 ],[ 1398729600000,6 ],[ 1398869624000,10 ],[ 1398967397000,16 ],[ 1398988800000,16 ],[ 1399075200000,16 ],[ 1399161600000,16 ],[ 1399248000000,16 ],[ 1399334400000,16 ],[ 1399420800000,16 ],[ 1399507200000,16 ],[ 1399593600000,16 ],[ 1399680000000,16 ],[ 1399766400000,16 ],[ 1399852800000,16 ],[ 1399939200000,16 ],[ 1400025600000,16 ],[ 1400112000000,16 ],[ 1400198400000,16 ],[ 1400284800000,16 ],[ 1400371200000,16 ],[ 1400457600000,16 ],[ 1400544000000,16 ],[ 1400630400000,16 ],[ 1400716800000,16 ],[ 1400803200000,16 ],[ 1400889600000,16 ],[ 1400976000000,16 ],[ 1401062400000,16 ],[ 1401148800000,16 ],[ 1401235200000,16 ],[ 1401321600000,16 ],[ 1401408000000,16 ],[ 1401494400000,16 ],[ 1401580800000,16 ],[ 1401667200000,16 ],[ 1401753600000,16 ],[ 1401840000000,16 ],[ 1401926400000,16 ],[ 1402012800000,16 ],[ 1402099200000,16 ],[ 1402185600000,16 ],[ 1402272000000,16 ],[ 1402358400000,16 ],[ 1402444800000,16 ],[ 1402531200000,16 ],[ 1402617600000,16 ],[ 1402704000000,16 ],[ 1402790400000,16 ],[ 1402876800000,16 ],[ 1402963200000,16 ],[ 1403049600000,16 ],[ 1403136000000,16 ],[ 1403222400000,16 ],[ 1403308800000,16 ],[ 1403395200000,16 ],[ 1403481600000,16 ],[ 1403568000000,16 ],[ 1403654400000,16 ],[ 1403740800000,16 ],[ 1403827200000,16 ],[ 1403913600000,16 ],[ 1404000000000,16 ],[ 1404086400000,16 ],[ 1404241835000,19 ],[ 1404259200000,19 ],[ 1404345600000,19 ],[ 1404432000000,19 ],[ 1404518400000,19 ],[ 1404604800000,19 ],[ 1404757076000,20 ],[ 1404825973000,28 ],[ 1404864000000,28 ],[ 1404950400000,28 ],[ 1405036800000,28 ],[ 1405123200000,28 ],[ 1405209600000,28 ],[ 1405296000000,28 ],[ 1405451769000,48 ],[ 1405468800000,48 ],[ 1405555200000,48 ],[ 1405641600000,48 ],[ 1405728000000,48 ],[ 1405814400000,48 ],[ 1405900800000,48 ],[ 1405987200000,48 ],[ 1406073600000,48 ],[ 1406160000000,48 ],[ 1406246400000,48 ],[ 1406332800000,48 ],[ 1406419200000,48 ],[ 1406505600000,48 ],[ 1406592000000,48 ],[ 1406678400000,48 ],[ 1406764800000,48 ],[ 1406851200000,48 ],[ 1406937600000,48 ],[ 1407024000000,48 ],[ 1407110400000,48 ],[ 1407196800000,48 ],[ 1407283200000,48 ],[ 1407433948000,48 ],[ 1407480262000,48 ] ] }] };
+        
+        window.chart_charts.deletions_by_author_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.deletions_by_author_by_date"></div>
+<small>
+<center>5 best authors shown</center>
+</small>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

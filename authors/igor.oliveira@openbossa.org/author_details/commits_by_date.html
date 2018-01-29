@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - Chromium</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body { padding-top: 60px; }
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - Chromium</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../best_authors.html'>Authors</a>
+</li>
+<li class=''>
+<a href='../../../files/by_date.html'>Files</a>
+</li>
+<li class=''>
+<a href='../../../lines/by_date.html'>Lines</a>
+</li>
+<li class=''>
+<a href='../../../comments/by_date.html'>Comments</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class='active'>
+<a href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class=''>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class=''>
+<a href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class=''>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>Commits by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "igor.oliveira@openbossa.org","type": "spline","data": [ [ 1314287163000,1 ],[ 1314295457000,2 ],[ 1314298921000,3 ],[ 1314305815000,4 ],[ 1314316800000,4 ],[ 1314403200000,4 ],[ 1314489600000,4 ],[ 1314576000000,4 ],[ 1314662400000,4 ],[ 1314748800000,4 ],[ 1314835200000,4 ],[ 1314921600000,4 ],[ 1315008000000,4 ],[ 1315094400000,4 ],[ 1315180800000,4 ],[ 1315267200000,4 ],[ 1315353600000,4 ],[ 1315440000000,4 ],[ 1315526400000,4 ],[ 1315612800000,4 ],[ 1315699200000,4 ],[ 1315863666000,5 ],[ 1315872000000,5 ],[ 1315958400000,5 ],[ 1316044800000,5 ],[ 1316194291000,6 ],[ 1316197341000,7 ],[ 1316217600000,7 ],[ 1316304000000,7 ],[ 1316390400000,7 ],[ 1316476800000,7 ],[ 1316563200000,7 ],[ 1316649600000,7 ],[ 1316736000000,7 ],[ 1316822400000,7 ],[ 1316908800000,7 ],[ 1316995200000,7 ],[ 1317081600000,7 ],[ 1317168000000,7 ],[ 1317254400000,7 ],[ 1317340800000,7 ],[ 1317427200000,7 ],[ 1317513600000,7 ],[ 1317600000000,7 ],[ 1317686400000,7 ],[ 1317772800000,7 ],[ 1317859200000,7 ],[ 1317945600000,7 ],[ 1318032000000,7 ],[ 1318118400000,7 ],[ 1318204800000,7 ],[ 1318291200000,7 ],[ 1318377600000,7 ],[ 1318464000000,7 ],[ 1318550400000,7 ],[ 1318636800000,7 ],[ 1318723200000,7 ],[ 1318809600000,7 ],[ 1318896000000,7 ],[ 1318982400000,7 ],[ 1319068800000,7 ],[ 1319155200000,7 ],[ 1319241600000,7 ],[ 1319328000000,7 ],[ 1319414400000,7 ],[ 1319500800000,7 ],[ 1319587200000,7 ],[ 1319673600000,7 ],[ 1319760000000,7 ],[ 1319846400000,7 ],[ 1319932800000,7 ],[ 1320019200000,7 ],[ 1320105600000,7 ],[ 1320192000000,7 ],[ 1320278400000,7 ],[ 1320364800000,7 ],[ 1320451200000,7 ],[ 1320537600000,7 ],[ 1320624000000,7 ],[ 1320710400000,7 ],[ 1320849909000,8 ],[ 1320883200000,8 ],[ 1320969600000,8 ],[ 1321056000000,8 ],[ 1321142400000,8 ],[ 1321228800000,8 ],[ 1321315200000,8 ],[ 1321401600000,8 ],[ 1321570166000,9 ],[ 1321634625000,10 ],[ 1321641377000,11 ],[ 1321669412000,12 ],[ 1321747200000,12 ],[ 1321894986000,13 ],[ 1321920000000,13 ],[ 1322006400000,13 ],[ 1322092800000,13 ],[ 1322179200000,13 ],[ 1322330453000,14 ],[ 1322352000000,14 ],[ 1322438400000,14 ],[ 1322524800000,14 ],[ 1322611200000,14 ],[ 1322712158000,15 ],[ 1322784000000,15 ],[ 1322870400000,15 ],[ 1322956800000,15 ],[ 1323043200000,15 ],[ 1323144422000,16 ],[ 1323216000000,16 ],[ 1323302400000,16 ],[ 1323388800000,16 ],[ 1323475200000,16 ],[ 1323561600000,16 ],[ 1323648000000,16 ],[ 1323734400000,16 ],[ 1323820800000,16 ],[ 1323966475000,17 ],[ 1323993600000,17 ],[ 1324080000000,17 ],[ 1324166400000,17 ],[ 1324252800000,17 ],[ 1324339200000,17 ],[ 1324425600000,17 ],[ 1324512000000,17 ],[ 1324598400000,17 ],[ 1324684800000,17 ],[ 1324771200000,17 ],[ 1324857600000,17 ],[ 1324944000000,17 ],[ 1325030400000,17 ],[ 1325116800000,17 ],[ 1325203200000,17 ],[ 1325289600000,17 ],[ 1325376000000,17 ],[ 1325462400000,17 ],[ 1325548800000,17 ],[ 1325699445000,18 ],[ 1325701262000,19 ] ] }] };
+        
+        window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.commits_sum_by_author_by_date"></div>
+<small>
+<center>5 best authors shown</center>
+</small>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

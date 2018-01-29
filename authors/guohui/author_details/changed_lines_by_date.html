@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - Chromium</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body { padding-top: 60px; }
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - Chromium</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../best_authors.html'>Authors</a>
+</li>
+<li class=''>
+<a href='../../../files/by_date.html'>Files</a>
+</li>
+<li class='active'>
+<a href='../../../lines/by_date.html'>Lines</a>
+</li>
+<li class=''>
+<a href='../../../comments/by_date.html'>Comments</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class=''>
+<a href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class='active'>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class=''>
+<a href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class=''>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>Changed lines by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "guohui","type": "spline","data": [ [ 1409683623000,29 ],[ 1409745163000,58 ],[ 1409863848000,72 ],[ 1409947582000,357 ],[ 1409961600000,357 ],[ 1410048000000,357 ],[ 1410134400000,357 ],[ 1410220800000,357 ],[ 1410307200000,357 ],[ 1410393600000,357 ],[ 1410561087000,416 ],[ 1410566400000,416 ],[ 1410652800000,416 ],[ 1410739200000,416 ],[ 1410825600000,416 ],[ 1410912000000,416 ],[ 1410998400000,416 ],[ 1411084800000,416 ],[ 1411171200000,416 ],[ 1411257600000,416 ],[ 1411344000000,416 ],[ 1411507281000,487 ],[ 1411588884000,502 ],[ 1411603200000,502 ],[ 1411689600000,502 ],[ 1411776000000,502 ],[ 1411862400000,502 ],[ 1411948800000,502 ],[ 1412035200000,502 ],[ 1412192812000,521 ],[ 1412208000000,521 ],[ 1412294400000,521 ],[ 1412380800000,521 ],[ 1412467200000,521 ],[ 1412640000000,525 ],[ 1412657302000,525 ],[ 1412726400000,525 ],[ 1412812800000,525 ],[ 1412899200000,525 ],[ 1412985600000,525 ],[ 1413072000000,525 ],[ 1413158400000,525 ],[ 1413331200000,681 ],[ 1413332362000,681 ],[ 1413417600000,681 ],[ 1413504000000,681 ],[ 1413590400000,681 ],[ 1413676800000,681 ],[ 1413763200000,681 ],[ 1413849600000,681 ],[ 1413936000000,681 ],[ 1414080405000,786 ],[ 1414102373000,940 ],[ 1414170861000,1370 ],[ 1414195200000,1370 ],[ 1414281600000,1370 ],[ 1414368000000,1370 ],[ 1414454400000,1370 ],[ 1414627200000,1454 ],[ 1414627833000,1454 ],[ 1414793990000,1458 ],[ 1414800000000,1458 ],[ 1414886400000,1458 ],[ 1414972800000,1458 ],[ 1415059200000,1458 ],[ 1415145600000,1458 ],[ 1415232000000,1458 ],[ 1415399735000,1473 ],[ 1415404800000,1473 ],[ 1415491200000,1473 ],[ 1415577600000,1473 ],[ 1415750400000,1482 ],[ 1415752429000,1482 ],[ 1415836800000,1482 ],[ 1416004209000,1487 ],[ 1416009600000,1487 ],[ 1416096000000,1487 ],[ 1416182400000,1487 ],[ 1416369900000,1505 ],[ 1416421999000,1537 ] ] }] };
+        
+        window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.changed_lines_by_author_by_date"></div>
+<small>
+<center>5 best authors shown</center>
+</small>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

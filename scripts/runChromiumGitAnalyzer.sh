@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Define pathes for this tool and Chromium source.
-CHROMIUM_PATH=$HOME/chromium-stats/Chromium/
-OUTPUT_PATH=$HOME/github/igalia-chromium-stats/igalia-chromium-contribution-stats
+CHROMIUM_PATH=$HOME/chromium-stats/chromium/Chromium/
+OUTPUT_PATH=$HOME/github/Igalia-Chromium-Stats/igalia-chromium-contribution-stats/
 
 export IGALIA_EMAIL="@igalia.com"
 export GYUYOUNG_LGE_EMAIL="gyuyoung.kim@lge.com"
@@ -10,6 +10,7 @@ export GYUYOUNG_SAMSUNG_EMAIL="gyuyoung.kim@samsung.com"
 export DAPE_LGE_EMAIL="jose.dapena@lge.com"
 export MAKSIM_INTEL_EMAIL="maksim.sisov@intel.com"
 export TONIKITOO_WEBKIT_EMAIL="tonikitoo@webkit.org"
+export FRED_FREE_EMAIL="fred.wang@free.fr"
 
 while :
 do
@@ -28,7 +29,7 @@ do
     timestamp=$(date +"%T")
     echo "[$timestamp] Starting checking Igalia commits until $now, please wait..."
     git filter-branch -f --commit-filter '
-        if echo "$GIT_AUTHOR_EMAIL" | grep -q "$IGALIA_EMAIL\|$GYUYOUNG_LGE_EMAIL\|$DAPE_LGE_EMAIL\|$MAKSIM_INTEL_EMAIL\|$TONIKITOO_WEBKIT_EMAIL\|$GYUYOUNG_SAMSUNG_EMAIL";
+        if echo "$GIT_AUTHOR_EMAIL" | grep -q "$IGALIA_EMAIL\|$GYUYOUNG_LGE_EMAIL\|$DAPE_LGE_EMAIL\|$MAKSIM_INTEL_EMAIL\|$TONIKITOO_WEBKIT_EMAIL\|$GYUYOUNG_SAMSUNG_EMAIL\|$FRED_FREE_EMAIL";
         then
             git commit-tree "$@";
         else
@@ -36,7 +37,7 @@ do
         fi' HEAD
 
     timestamp=$(date +"%T")
-    echo "[$timestamp] Finish to find LGE commits."
+    echo "[$timestamp] Finish to find Igalia commits."
 
     git_stats generate -p $CHROMIUM_PATH -o $OUTPUT_PATH
 

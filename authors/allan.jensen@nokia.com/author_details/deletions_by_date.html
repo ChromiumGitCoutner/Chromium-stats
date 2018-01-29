@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitStats - Chromium</title>
+<meta charset='utf-8'>
+<link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<style>
+body { padding-top: 60px; }
+</style>
+<link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+<script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+<script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-csv.js' type='text/javascript'></script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</a>
+<a class='brand' href='../../../index.html'>GitStats - Chromium</a>
+<div class='nav-collapse collapse'>
+<ul class='nav'>
+<li class=''>
+<a href='../../../general.html'>General</a>
+</li>
+<li class=''>
+<a href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='active'>
+<a href='../../best_authors.html'>Authors</a>
+</li>
+<li class=''>
+<a href='../../../files/by_date.html'>Files</a>
+</li>
+<li class=''>
+<a href='../../../lines/by_date.html'>Lines</a>
+</li>
+<li class=''>
+<a href='../../../comments/by_date.html'>Comments</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class=''>
+<a href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class=''>
+<a href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class=''>
+<a href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class='active'>
+<a href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='pagination-centered'>Lines deleted by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "allan.jensen@nokia.com","type": "spline","data": [ [ 1341998868000,0 ],[ 1341998886000,1 ],[ 1342026543000,16 ],[ 1342107275000,44 ],[ 1342112519000,827 ],[ 1342112836000,828 ],[ 1342137600000,828 ],[ 1342274968000,842 ],[ 1342310400000,842 ],[ 1342396800000,842 ],[ 1342483200000,842 ],[ 1342569600000,842 ],[ 1342656000000,842 ],[ 1342742400000,842 ],[ 1342828800000,842 ],[ 1342915200000,842 ],[ 1343001600000,842 ],[ 1343137063000,900 ],[ 1343214947000,952 ],[ 1343217276000,966 ],[ 1343232593000,1004 ],[ 1343234717000,1011 ],[ 1343319327000,1038 ],[ 1343347200000,1038 ],[ 1343433600000,1038 ],[ 1343520000000,1038 ],[ 1343655194000,1068 ],[ 1343657492000,1068 ],[ 1343658193000,1071 ],[ 1343770323000,1074 ],[ 1343846712000,1898 ],[ 1343865600000,1898 ],[ 1343952000000,1898 ],[ 1344038400000,1898 ],[ 1344124800000,1898 ],[ 1344245894000,1902 ],[ 1344335215000,3800 ],[ 1344429729000,3807 ],[ 1344514830000,3857 ],[ 1344521011000,3857 ],[ 1344591024000,3874 ],[ 1344614896000,3874 ],[ 1344624158000,3879 ],[ 1344643200000,3879 ],[ 1344772054000,3880 ],[ 1344885853000,3883 ],[ 1344943326000,3976 ],[ 1344944850000,3977 ],[ 1344950835000,4021 ],[ 1344951001000,4028 ],[ 1344951470000,4030 ],[ 1344988800000,4030 ],[ 1345075200000,4030 ],[ 1345213916000,4038 ],[ 1345248000000,4038 ],[ 1345334400000,4038 ],[ 1345450474000,4039 ],[ 1345451036000,4041 ],[ 1345474224000,4056 ],[ 1345475897000,4059 ],[ 1345507200000,4059 ],[ 1345631035000,4074 ],[ 1345639566000,4081 ],[ 1345639808000,4082 ],[ 1345641146000,4083 ],[ 1345644057000,4083 ],[ 1345680000000,4083 ],[ 1345797651000,4094 ],[ 1345852800000,4094 ],[ 1345939200000,4094 ],[ 1346025600000,4094 ],[ 1346146914000,4368 ],[ 1346198400000,4368 ],[ 1346284800000,4368 ],[ 1346371200000,4368 ],[ 1346457600000,4368 ],[ 1346544000000,4368 ],[ 1346681703000,4370 ],[ 1346683302000,4414 ],[ 1346684240000,4414 ],[ 1346699682000,4415 ],[ 1346759806000,4459 ],[ 1346878103000,4460 ],[ 1346889600000,4460 ],[ 1347022304000,4484 ],[ 1347022759000,4488 ],[ 1347034156000,4582 ],[ 1347062400000,4582 ],[ 1347148800000,4582 ],[ 1347274513000,4586 ],[ 1347279255000,4591 ],[ 1347321600000,4591 ],[ 1347459294000,4596 ],[ 1347548628000,4597 ],[ 1347549757000,4717 ],[ 1347580800000,4717 ],[ 1347667200000,4717 ],[ 1347753600000,4717 ],[ 1347894161000,4744 ],[ 1347894283000,4746 ],[ 1347956511000,4749 ],[ 1347964082000,4751 ],[ 1348012800000,4751 ],[ 1348129325000,4760 ],[ 1348130683000,4820 ] ] }] };
+        
+        window.chart_charts.deletions_by_author_by_date = new Highcharts.StockChart(options);
+
+          };
+                })()
+        </script>
+
+<div id="charts.deletions_by_author_by_date"></div>
+<small>
+<center>5 best authors shown</center>
+</small>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
