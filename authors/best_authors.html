@@ -35,15 +35,6 @@ body { padding-top: 60px; }
 <li class='active'>
 <a href='best_authors.html'>Authors</a>
 </li>
-<li class=''>
-<a href='../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../comments/by_date.html'>Comments</a>
-</li>
 </ul>
 </div>
 </div>
@@ -53,33 +44,25 @@ body { padding-top: 60px; }
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
 <li class='active'>
-<a href='best_authors.html'>Best authors</a>
+<a href='best_authors.html'>Igalia Chromium authors</a>
 </li>
 <li class=''>
 <a href='commits_sum_by_author_by_date.html'>Commits sum by author by date</a>
-</li>
-<li class=''>
-<a href='changed_lines_by_author_by_date.html'>Changed lines by author by date</a>
-</li>
-<li class=''>
-<a href='insertions_by_author_by_date.html'>Lines added by author by date</a>
-</li>
-<li class=''>
-<a href='deletions_by_author_by_date.html'>Lines deleted by author by date</a>
 </li>
 </ul>
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header'>
-<h1 class='pagination-centered'>Best authors</h1>
+<h1 class='pagination-centered'>Igalia Chromium authors</h1>
 </div>
 <table class='table table-bordered table-condensed table-hover'>
 <tr>
 <th>#</th>
 <th>Author</th>
 <th>Commits</th>
-<th>Lines added</th>
-<th>Lines deleted</th>
+<th>Chromium Gerrit</th>
+<th>Chromium Rietveld</th>
+<th>Ongoing Review</th>
 <th>First commit</th>
 <th>Last commit</th>
 <th></th>
@@ -87,9 +70,10 @@ body { padding-top: 60px; }
 <tr>
 <th>1</th>
 <th>Gyuyoung Kim (including gyuyoung.kim@samsung.com) &lt;gyuyoung@igalia.com&gt;</th>
-<td>402</td>
-<td>32279319</td>
-<td>15771412</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=gyuyoung@igalia.com>402</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:gyuyoung@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=gyuyoung@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:gyuyoung@igalia.com>ongoing</a></td>
 <td>November 03, 2010 06:59</td>
 <td>September 06, 2017 12:43</td>
 <td>
@@ -102,9 +86,10 @@ body { padding-top: 60px; }
 <tr>
 <th>2</th>
 <th>Antonio Gomes (including tonikitoo@webkit.org) &lt;tonikitoo@igalia.com&gt;</th>
-<td>386</td>
-<td>18783488</td>
-<td>9524092</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=tonikitoo@igalia.com>386</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:tonikitoo@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=tonikitoo@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:tonikitoo@igalia.com>ongoing</a></td>
 <td>October 01, 2009 14:31</td>
 <td>January 24, 2018 17:48</td>
 <td>
@@ -117,9 +102,10 @@ body { padding-top: 60px; }
 <tr>
 <th>3</th>
 <th>Manuel Rego Casasnovas &lt;rego@igalia.com&gt;</th>
-<td>220</td>
-<td>12519222</td>
-<td>9862539</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=rego@igalia.com>220</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:rego@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=rego@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:rego@igalia.com>ongoing</a></td>
 <td>September 24, 2013 14:35</td>
 <td>January 23, 2018 21:29</td>
 <td>
@@ -132,9 +118,10 @@ body { padding-top: 60px; }
 <tr>
 <th>4</th>
 <th>Andy Wingo &lt;wingo@igalia.com&gt;</th>
-<td>153</td>
-<td>3187567</td>
-<td>1188292</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=wingo@igalia.com>153</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:wingo@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=wingo@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:wingo@igalia.com>ongoing</a></td>
 <td>February 20, 2012 12:16</td>
 <td>August 31, 2015 01:47</td>
 <td>
@@ -147,9 +134,10 @@ body { padding-top: 60px; }
 <tr>
 <th>5</th>
 <th>Sergio Villar Senin &lt;svillar@igalia.com&gt;</th>
-<td>140</td>
-<td>5819058</td>
-<td>4485590</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=svillar@igalia.com>140</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:svillar@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=svillar@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:svillar@igalia.com>ongoing</a></td>
 <td>May 15, 2013 18:30</td>
 <td>July 06, 2017 16:20</td>
 <td>
@@ -162,9 +150,10 @@ body { padding-top: 60px; }
 <tr>
 <th>6</th>
 <th>Javier Fernandez &lt;jfernandez@igalia.com&gt;</th>
-<td>138</td>
-<td>8281560</td>
-<td>7229013</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=jfernandez@igalia.com>138</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:jfernandez@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=jfernandez@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:jfernandez@igalia.com>ongoing</a></td>
 <td>January 30, 2014 18:09</td>
 <td>January 30, 2018 02:20</td>
 <td>
@@ -177,9 +166,10 @@ body { padding-top: 60px; }
 <tr>
 <th>7</th>
 <th>Maksim Sisov (including maksim.sisov@intel.com) &lt;msisov@igalia.com&gt;</th>
-<td>123</td>
-<td>5710253</td>
-<td>4273001</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=msisov@igalia.com>123</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:msisov@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=msisov@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:msisov@igalia.com>ongoing</a></td>
 <td>March 18, 2016 01:57</td>
 <td>January 24, 2018 17:31</td>
 <td>
@@ -192,9 +182,10 @@ body { padding-top: 60px; }
 <tr>
 <th>8</th>
 <th>Caitlin Potter &lt;caitp@igalia.com&gt;</th>
-<td>112</td>
-<td>1612687</td>
-<td>1379519</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=caitp@igalia.com>112</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:caitp@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=caitp@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:caitp@igalia.com>ongoing</a></td>
 <td>July 11, 2016 03:38</td>
 <td>January 11, 2018 12:24</td>
 <td>
@@ -207,11 +198,12 @@ body { padding-top: 60px; }
 <tr>
 <th>9</th>
 <th>Gyuyoung Kim (on behalf of LGE) &lt;gyuyoung.kim@lge.com&gt;</th>
-<td>77</td>
-<td>4176063</td>
-<td>3373239</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=gyuyoung.kim@lge.com>77</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:gyuyoung.kim@lge.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=gyuyoung.kim@lge.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:gyuyoung.kim@lge.com>ongoing</a></td>
 <td>September 11, 2017 02:37</td>
-<td>February 01, 2018 23:46</td>
+<td>February 02, 2018 12:26</td>
 <td>
 <a class='btn' href='gyuyoung_kim_(on_behalf_of_lge)/activity/by_date.html'>Activity</a>
 </td>
@@ -222,9 +214,10 @@ body { padding-top: 60px; }
 <tr>
 <th>10</th>
 <th>Frédéric Wang &lt;fwang@igalia.com&gt;</th>
-<td>51</td>
-<td>1832551</td>
-<td>662260</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=fwang@igalia.com>51</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:fwang@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=fwang@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:fwang@igalia.com>ongoing</a></td>
 <td>September 02, 2016 05:43</td>
 <td>April 05, 2017 11:06</td>
 <td>
@@ -237,9 +230,10 @@ body { padding-top: 60px; }
 <tr>
 <th>11</th>
 <th>Jose Dapena Paz(on behalf of LGE) &lt;jose.dapena@lge.com&gt;</th>
-<td>40</td>
-<td>1037486</td>
-<td>831463</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=jose.dapena@lge.com>40</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:jose.dapena@lge.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=jose.dapena@lge.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:jose.dapena@lge.com>ongoing</a></td>
 <td>October 24, 2017 14:01</td>
 <td>January 10, 2018 15:34</td>
 <td>
@@ -252,9 +246,10 @@ body { padding-top: 60px; }
 <tr>
 <th>12</th>
 <th>Josh Wolfe &lt;jwolfe@igalia.com&gt;</th>
-<td>35</td>
-<td>1164838</td>
-<td>692932</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=jwolfe@igalia.com>35</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:jwolfe@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=jwolfe@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:jwolfe@igalia.com>ongoing</a></td>
 <td>May 06, 2016 17:32</td>
 <td>January 10, 2018 16:34</td>
 <td>
@@ -267,9 +262,10 @@ body { padding-top: 60px; }
 <tr>
 <th>13</th>
 <th>Emilio Cobos Álvarez &lt;ecobos@igalia.com&gt;</th>
-<td>28</td>
-<td>1899568</td>
-<td>1555908</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=ecobos@igalia.com>28</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:ecobos@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=ecobos@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:ecobos@igalia.com>ongoing</a></td>
 <td>October 25, 2016 12:19</td>
 <td>August 01, 2017 13:40</td>
 <td>
@@ -282,9 +278,10 @@ body { padding-top: 60px; }
 <tr>
 <th>14</th>
 <th>Claudio Saavedra &lt;csaavedra@igalia.com&gt;</th>
-<td>21</td>
-<td>6377955</td>
-<td>13857246</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=csaavedra@igalia.com>21</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:csaavedra@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=csaavedra@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:csaavedra@igalia.com>ongoing</a></td>
 <td>February 15, 2013 18:27</td>
 <td>August 26, 2015 01:46</td>
 <td>
@@ -297,9 +294,10 @@ body { padding-top: 60px; }
 <tr>
 <th>15</th>
 <th>Lorenzo Tilve &lt;ltilve@igalia.com&gt;</th>
-<td>19</td>
-<td>1645898</td>
-<td>1447142</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=ltilve@igalia.com>19</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:ltilve@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=ltilve@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:ltilve@igalia.com>ongoing</a></td>
 <td>February 13, 2014 12:48</td>
 <td>September 23, 2015 11:13</td>
 <td>
@@ -312,9 +310,10 @@ body { padding-top: 60px; }
 <tr>
 <th>16</th>
 <th>Adrian Perez &lt;aperez@igalia.com&gt;</th>
-<td>9</td>
-<td>208323</td>
-<td>143231</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=aperez@igalia.com>9</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:aperez@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=aperez@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:aperez@igalia.com>ongoing</a></td>
 <td>November 13, 2014 12:20</td>
 <td>October 19, 2015 09:08</td>
 <td>
@@ -327,9 +326,10 @@ body { padding-top: 60px; }
 <tr>
 <th>17</th>
 <th>Xan Lopez &lt;xan@igalia.com&gt;</th>
-<td>4</td>
-<td>68251</td>
-<td>45474</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=xan@igalia.com>4</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:xan@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=xan@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:xan@igalia.com>ongoing</a></td>
 <td>October 22, 2013 11:08</td>
 <td>November 05, 2013 17:23</td>
 <td>
@@ -342,9 +342,10 @@ body { padding-top: 60px; }
 <tr>
 <th>18</th>
 <th>Alex &lt;alex@igalia.com&gt;</th>
-<td>2</td>
-<td>5078458</td>
-<td>2268604</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=alex@igalia.com>2</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:alex@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=alex@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:alex@igalia.com>ongoing</a></td>
 <td>March 19, 2015 03:22</td>
 <td>June 11, 2015 12:50</td>
 <td>
@@ -357,9 +358,10 @@ body { padding-top: 60px; }
 <tr>
 <th>19</th>
 <th>Enrique Ocaña González &lt;eocanha@igalia.com&gt;</th>
-<td>2</td>
-<td>92879</td>
-<td>47874</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=eocanha@igalia.com>2</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:eocanha@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=eocanha@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:eocanha@igalia.com>ongoing</a></td>
 <td>February 26, 2014 13:30</td>
 <td>February 28, 2014 05:44</td>
 <td>
@@ -372,9 +374,10 @@ body { padding-top: 60px; }
 <tr>
 <th>20</th>
 <th>Spena &lt;spena@igalia.com&gt;</th>
-<td>2</td>
-<td>416575</td>
-<td>60319</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=spena@igalia.com>2</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:spena@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=spena@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:spena@igalia.com>ongoing</a></td>
 <td>October 23, 2012 08:09</td>
 <td>December 12, 2012 16:11</td>
 <td>
@@ -387,9 +390,10 @@ body { padding-top: 60px; }
 <tr>
 <th>21</th>
 <th>Alejandro Piñeiro &lt;siglesias@igalia.com&gt;</th>
-<td>1</td>
-<td>44374</td>
-<td>7870</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=siglesias@igalia.com>1</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:siglesias@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=siglesias@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:siglesias@igalia.com>ongoing</a></td>
 <td>April 11, 2014 08:19</td>
 <td>April 11, 2014 08:19</td>
 <td>
@@ -402,9 +406,10 @@ body { padding-top: 60px; }
 <tr>
 <th>22</th>
 <th>Diego Pino &lt;dpino@igalia.com&gt;</th>
-<td>1</td>
-<td>509175</td>
-<td>245927</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=dpino@igalia.com>1</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:dpino@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=dpino@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:dpino@igalia.com>ongoing</a></td>
 <td>February 12, 2014 19:09</td>
 <td>February 12, 2014 19:09</td>
 <td>
@@ -417,9 +422,10 @@ body { padding-top: 60px; }
 <tr>
 <th>23</th>
 <th>Javier Muñoz &lt;jmunhoz@igalia.com&gt;</th>
-<td>1</td>
-<td>21647</td>
-<td>24120</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=jmunhoz@igalia.com>1</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:jmunhoz@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=jmunhoz@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:jmunhoz@igalia.com>ongoing</a></td>
 <td>March 26, 2014 20:54</td>
 <td>March 26, 2014 20:54</td>
 <td>
@@ -432,9 +438,10 @@ body { padding-top: 60px; }
 <tr>
 <th>24</th>
 <th>Joanmarie Diggs &lt;jdiggs@igalia.com&gt;</th>
-<td>1</td>
-<td>91</td>
-<td>65</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=jdiggs@igalia.com>1</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:jdiggs@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=jdiggs@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:jdiggs@igalia.com>ongoing</a></td>
 <td>February 15, 2013 18:33</td>
 <td>February 15, 2013 18:33</td>
 <td>
@@ -447,9 +454,10 @@ body { padding-top: 60px; }
 <tr>
 <th>25</th>
 <th>Martin Robinson &lt;mrobinson@igalia.com&gt;</th>
-<td>1</td>
-<td>18500</td>
-<td>20333</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=mrobinson@igalia.com>1</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:mrobinson@igalia.com>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=mrobinson@igalia.com>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:mrobinson@igalia.com>ongoing</a></td>
 <td>October 10, 2013 18:36</td>
 <td>October 10, 2013 18:36</td>
 <td>
@@ -462,9 +470,10 @@ body { padding-top: 60px; }
 <tr>
 <th>26</th>
 <th>fred.wang@free.fr &lt;fred.wang@free.fr@0039d316-1c4b-4281-b951-d872f2087c98&gt;</th>
-<td>1</td>
-<td>192327</td>
-<td>203951</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=fred.wang@free.fr@0039d316-1c4b-4281-b951-d872f2087c98>1</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:fred.wang@free.fr@0039d316-1c4b-4281-b951-d872f2087c98>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=fred.wang@free.fr@0039d316-1c4b-4281-b951-d872f2087c98>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:fred.wang@free.fr@0039d316-1c4b-4281-b951-d872f2087c98>ongoing</a></td>
 <td>January 16, 2014 18:18</td>
 <td>January 16, 2014 18:18</td>
 <td>
@@ -477,9 +486,10 @@ body { padding-top: 60px; }
 <tr>
 <th>27</th>
 <th>fred.wang@free.fr &lt;fred.wang@free.fr@bbb929c8-8fbe-4397-9dbb-9b2b20218538&gt;</th>
-<td>1</td>
-<td>14874</td>
-<td>11106</td>
+<td><a href=https://chromium.googlesource.com/chromium/src/+log/master?author=fred.wang@free.fr@bbb929c8-8fbe-4397-9dbb-9b2b20218538>1</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/status:merged+author:fred.wang@free.fr@bbb929c8-8fbe-4397-9dbb-9b2b20218538>gerrit</a></td>
+<td><a href=https://codereview.chromium.org/search?closed=2&owner=fred.wang@free.fr@bbb929c8-8fbe-4397-9dbb-9b2b20218538>rietveld</a></td>
+<td><a href=https://chromium-review.googlesource.com/q/is:open+owner:fred.wang@free.fr@bbb929c8-8fbe-4397-9dbb-9b2b20218538>ongoing</a></td>
 <td>March 18, 2014 10:10</td>
 <td>March 18, 2014 10:10</td>
 <td>

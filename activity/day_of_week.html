@@ -35,15 +35,6 @@ body { padding-top: 60px; }
 <li class=''>
 <a href='../authors/best_authors.html'>Authors</a>
 </li>
-<li class=''>
-<a href='../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../comments/by_date.html'>Comments</a>
-</li>
 </ul>
 </div>
 </div>
@@ -98,8 +89,8 @@ body { padding-top: 60px; }
 <td>304</td>
 <td>397</td>
 <td>411</td>
-<td>390</td>
-<td>327</td>
+<td>389</td>
+<td>328</td>
 <td>87</td>
 </tr>
 <tr>
@@ -108,7 +99,7 @@ body { padding-top: 60px; }
 <td>15.4</td>
 <td>20.1</td>
 <td>20.9</td>
-<td>19.8</td>
+<td>19.7</td>
 <td>16.6</td>
 <td>4.4</td>
 </tr>
@@ -119,7 +110,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 55,304,397,411,390,327,87 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 55,304,397,411,389,328,87 ] }] };
         
         window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
 

@@ -39,7 +39,7 @@ do
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to find Igalia commits."
 
-    git_stats generate -p $CHROMIUM_PATH -o $OUTPUT_PATH
+    $HOME/github/Igalia-Chromium-Stats/igalia_git_stats/bin/git_stats generate -p $CHROMIUM_PATH -o $OUTPUT_PATH
 
     # Restore master branch
     git reset --hard refs/original/refs/heads/master
@@ -58,13 +58,3 @@ do
     echo "- EndTime: $timestamp"
     sleep 16h
 done
-
-skip_commit() {
-    shift;
-    while [ -n "$1" ];
-    do
-        shift;
-        map "$1";
-        shift;
-    done;
-}
