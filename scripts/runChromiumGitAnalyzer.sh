@@ -7,9 +7,13 @@ OUTPUT_PATH=$HOME/github/Igalia-Chromium-Stats/igalia-chromium-contribution-stat
 export IGALIA_EMAIL="@igalia.com"
 export GYUYOUNG_LGE_EMAIL="gyuyoung.kim@lge.com"
 export GYUYOUNG_SAMSUNG_EMAIL="gyuyoung.kim@samsung.com"
+export JULIE_SAMSUNG_EMAIL="je_julie.kim@samsung.com"
 export DAPE_LGE_EMAIL="jose.dapena@lge.com"
 export MAKSIM_INTEL_EMAIL="maksim.sisov@intel.com"
 export TONIKITOO_WEBKIT_EMAIL="tonikitoo@webkit.org"
+export MROBINSON_WEBKIT_EMAIL="mrobinson@webkit.org"
+export XAN_WEBKIT_EMAIL="xan@webkit.org"
+export ALEX_WEBKIT_EMAIL="alex@webkit.org"
 export FRED_FREE_EMAIL="fred.wang@free.fr"
 
 while :
@@ -30,7 +34,7 @@ do
     timestamp=$(date +"%T")
     echo "[$timestamp] Starting checking Igalia commits until $now, please wait..."
     git filter-branch -f --commit-filter '
-        if echo "$GIT_AUTHOR_EMAIL" | grep -q "$IGALIA_EMAIL\|$GYUYOUNG_LGE_EMAIL\|$DAPE_LGE_EMAIL\|$MAKSIM_INTEL_EMAIL\|$TONIKITOO_WEBKIT_EMAIL\|$GYUYOUNG_SAMSUNG_EMAIL\|$FRED_FREE_EMAIL";
+        if echo "$GIT_AUTHOR_EMAIL" | grep -q "$IGALIA_EMAIL\|$GYUYOUNG_LGE_EMAIL\|$DAPE_LGE_EMAIL\|$MAKSIM_INTEL_EMAIL\|$TONIKITOO_WEBKIT_EMAIL\|$GYUYOUNG_SAMSUNG_EMAIL\|$FRED_FREE_EMAIL\|$MROBINSON_WEBKIT_EMAIL\|XAN_WEBKIT_EMAIL\|ALEX_WEBKIT_EMAIL\|JULIE_SAMSUNG_EMAIL";
         then
             git commit-tree "$@";
         else
