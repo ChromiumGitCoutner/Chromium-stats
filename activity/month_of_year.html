@@ -90,32 +90,32 @@ body { padding-top: 60px; }
 </tr>
 <tr>
 <th>Commits</th>
-<td>249</td>
-<td>296</td>
-<td>257</td>
-<td>209</td>
-<td>243</td>
-<td>268</td>
-<td>202</td>
-<td>258</td>
-<td>237</td>
-<td>280</td>
-<td>260</td>
-<td>210</td>
+<td>278</td>
+<td>355</td>
+<td>316</td>
+<td>278</td>
+<td>295</td>
+<td>298</td>
+<td>254</td>
+<td>279</td>
+<td>288</td>
+<td>374</td>
+<td>298</td>
+<td>253</td>
 </tr>
 <tr>
 <th>Percentage</th>
-<td>8.4</td>
+<td>7.8</td>
 <td>10.0</td>
-<td>8.7</td>
-<td>7.0</td>
-<td>8.2</td>
-<td>9.0</td>
-<td>6.8</td>
-<td>8.7</td>
-<td>8.0</td>
-<td>9.4</td>
-<td>8.8</td>
+<td>8.9</td>
+<td>7.8</td>
+<td>8.3</td>
+<td>8.4</td>
+<td>7.1</td>
+<td>7.8</td>
+<td>8.1</td>
+<td>10.5</td>
+<td>8.4</td>
 <td>7.1</td>
 </tr>
 </table>
@@ -125,7 +125,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 249,296,257,209,243,268,202,258,237,280,260,210 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 278,355,316,278,295,298,254,279,288,374,298,253 ] }] };
         
         window.chart_charts.activity_by_month = new Highcharts.Chart(options);
 

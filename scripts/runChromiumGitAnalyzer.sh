@@ -34,7 +34,7 @@ do
     timestamp=$(date +"%T")
     echo "[$timestamp] Starting checking Igalia commits until $now, please wait..."
     git filter-branch -f --commit-filter '
-        if echo "$GIT_AUTHOR_EMAIL" | grep -q "$IGALIA_EMAIL\|$GYUYOUNG_LGE_EMAIL\|$DAPE_LGE_EMAIL\|$MAKSIM_INTEL_EMAIL\|$TONIKITOO_WEBKIT_EMAIL\|$GYUYOUNG_SAMSUNG_EMAIL\|$FRED_FREE_EMAIL\|$MROBINSON_WEBKIT_EMAIL\|XAN_WEBKIT_EMAIL\|ALEX_WEBKIT_EMAIL\|JULIE_SAMSUNG_EMAIL";
+        if echo "$GIT_AUTHOR_EMAIL" | grep -q "$IGALIA_EMAIL\|$GYUYOUNG_LGE_EMAIL\|$DAPE_LGE_EMAIL\|$MAKSIM_INTEL_EMAIL\|$TONIKITOO_WEBKIT_EMAIL\|$GYUYOUNG_SAMSUNG_EMAIL\|$FRED_FREE_EMAIL\|$MROBINSON_WEBKIT_EMAIL\|$XAN_WEBKIT_EMAIL\|$ALEX_WEBKIT_EMAIL\|$JULIE_SAMSUNG_EMAIL";
         then
             git commit-tree "$@";
         else
