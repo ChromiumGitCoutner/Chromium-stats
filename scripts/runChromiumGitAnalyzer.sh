@@ -61,5 +61,5 @@ do
     echo "[$timestamp] Finish to upload new result!"
     echo "- StartTime: $start_timestamp"
     echo "- EndTime: $timestamp"
-    sleep 16h
+    sleep 4h
 done
