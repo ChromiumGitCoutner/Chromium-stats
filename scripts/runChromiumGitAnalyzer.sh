@@ -29,7 +29,7 @@ do
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to update Chromium."
 
-    # Start to analyze commit counts.
+   # Start to analyze commit counts.
     now="$(date +'%Y-%m-%d')"
     timestamp=$(date +"%T")
     echo "[$timestamp] Starting checking Igalia commits until $now, please wait..."
@@ -50,7 +50,7 @@ do
     git reset --hard refs/original/refs/heads/master
     git reset --hard HEAD~2
 
-    # Upload the result to github.
+   # Upload the result to github.
     cd $OUTPUT_PATH
     git add .
     git commit -m "Update the new result by bot"
@@ -61,5 +61,5 @@ do
     echo "[$timestamp] Finish to upload new result!"
     echo "- StartTime: $start_timestamp"
     echo "- EndTime: $timestamp"
-    sleep 4h
+    sleep 3h
 done

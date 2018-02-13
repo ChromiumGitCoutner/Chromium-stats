@@ -35,15 +35,6 @@ body { padding-top: 60px; }
 <li class='active'>
 <a href='../../best_authors.html'>Authors</a>
 </li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
-</li>
 </ul>
 </div>
 </div>
@@ -100,7 +91,7 @@ body { padding-top: 60px; }
 <tr>
 <th>Commits</th>
 <td>58</td>
-<td>75</td>
+<td>77</td>
 <td>98</td>
 <td>68</td>
 <td>74</td>
@@ -114,9 +105,9 @@ body { padding-top: 60px; }
 </tr>
 <tr>
 <th>Percentage</th>
-<td>6.0</td>
-<td>7.7</td>
-<td>10.1</td>
+<td>5.9</td>
+<td>7.9</td>
+<td>10.0</td>
 <td>7.0</td>
 <td>7.6</td>
 <td>5.2</td>
@@ -134,7 +125,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 58,75,98,68,74,51,55,111,90,108,108,78 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 58,77,98,68,74,51,55,111,90,108,108,78 ] }] };
         
         window.chart_charts.activity_by_month = new Highcharts.Chart(options);
 

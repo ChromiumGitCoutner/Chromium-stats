@@ -35,15 +35,6 @@ body { padding-top: 60px; }
 <li class='active'>
 <a href='../../best_authors.html'>Authors</a>
 </li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
-</li>
 </ul>
 </div>
 </div>
@@ -95,11 +86,11 @@ body { padding-top: 60px; }
 <tr>
 <th>Commits</th>
 <td>8</td>
-<td>89</td>
-<td>144</td>
+<td>90</td>
+<td>146</td>
 <td>136</td>
-<td>140</td>
-<td>135</td>
+<td>143</td>
+<td>136</td>
 <td>22</td>
 </tr>
 <tr>
@@ -107,10 +98,10 @@ body { padding-top: 60px; }
 <td>1.2</td>
 <td>13.2</td>
 <td>21.4</td>
-<td>20.2</td>
-<td>20.8</td>
 <td>20.0</td>
-<td>3.3</td>
+<td>21.0</td>
+<td>20.0</td>
+<td>3.2</td>
 </tr>
 </table>
                 <script type="text/javascript">
@@ -119,7 +110,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 8,89,144,136,140,135,22 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 8,90,146,136,143,136,22 ] }] };
         
         window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
 

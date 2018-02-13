@@ -35,15 +35,6 @@ body { padding-top: 60px; }
 <li class='active'>
 <a href='../../best_authors.html'>Authors</a>
 </li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
-</li>
 </ul>
 </div>
 </div>
@@ -76,7 +67,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.insertions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "aneeshm","type": "spline","data": [ [ 1459409442000,11 ],[ 1459468800000,52 ],[ 1459473190000,49 ],[ 1459474513000,52 ],[ 1459555200000,52 ],[ 1459641600000,52 ],[ 1459728000000,52 ],[ 1459880049000,227 ],[ 1459900800000,227 ],[ 1459987200000,227 ],[ 1460073600000,227 ],[ 1460160000000,227 ],[ 1460246400000,227 ],[ 1460419200000,277 ],[ 1460421763000,260 ],[ 1460433226000,277 ],[ 1460505600000,277 ],[ 1460592000000,277 ],[ 1460764800000,321 ],[ 1460773292000,306 ],[ 1460773398000,321 ],[ 1460851200000,321 ],[ 1460937600000,321 ],[ 1461024000000,321 ],[ 1461110400000,321 ],[ 1461279757000,407 ],[ 1461283200000,418 ],[ 1461287076000,418 ],[ 1461369600000,418 ],[ 1461456000000,418 ],[ 1461542400000,418 ],[ 1461716790000,526 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.insertions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "aneeshm","type": "spline","data": [  ] }] };
         
         window.chart_charts.insertions_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -86,7 +77,7 @@ body { padding-top: 60px; }
 
 <div id="charts.insertions_by_author_by_date"></div>
 <small>
-<center>5 best authors shown</center>
+<center>5 Igalia Chromium authors shown</center>
 </small>
 </div>
 </div>

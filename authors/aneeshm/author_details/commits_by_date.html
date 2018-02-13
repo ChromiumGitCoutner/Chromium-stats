@@ -35,15 +35,6 @@ body { padding-top: 60px; }
 <li class='active'>
 <a href='../../best_authors.html'>Authors</a>
 </li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
-</li>
 </ul>
 </div>
 </div>
@@ -76,7 +67,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "aneeshm","type": "spline","data": [ [ 1459409442000,1 ],[ 1459468800000,3 ],[ 1459473190000,2 ],[ 1459474513000,3 ],[ 1459555200000,3 ],[ 1459641600000,3 ],[ 1459728000000,3 ],[ 1459880049000,4 ],[ 1459900800000,4 ],[ 1459987200000,4 ],[ 1460073600000,4 ],[ 1460160000000,4 ],[ 1460246400000,4 ],[ 1460419200000,6 ],[ 1460421763000,5 ],[ 1460433226000,6 ],[ 1460505600000,6 ],[ 1460592000000,6 ],[ 1460764800000,8 ],[ 1460773292000,7 ],[ 1460773398000,8 ],[ 1460851200000,8 ],[ 1460937600000,8 ],[ 1461024000000,8 ],[ 1461110400000,8 ],[ 1461279757000,9 ],[ 1461283200000,10 ],[ 1461287076000,10 ],[ 1461369600000,10 ],[ 1461456000000,10 ],[ 1461542400000,10 ],[ 1461716790000,11 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "aneeshm","type": "spline","data": [  ] }] };
         
         window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -86,7 +77,7 @@ body { padding-top: 60px; }
 
 <div id="charts.commits_sum_by_author_by_date"></div>
 <small>
-<center>5 best authors shown</center>
+<center>5 Igalia Chromium authors shown</center>
 </small>
 </div>
 </div>

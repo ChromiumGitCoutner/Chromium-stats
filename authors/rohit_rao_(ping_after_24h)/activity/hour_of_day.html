@@ -35,15 +35,6 @@ body { padding-top: 60px; }
 <li class='active'>
 <a href='../../best_authors.html'>Authors</a>
 </li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
-</li>
 </ul>
 </div>
 </div>
@@ -129,7 +120,7 @@ body { padding-top: 60px; }
 <td>10</td>
 <td>5</td>
 <td>7</td>
-<td>7</td>
+<td>9</td>
 <td>4</td>
 <td>7</td>
 <td>2</td>
@@ -146,17 +137,17 @@ body { padding-top: 60px; }
 <td>6.3</td>
 <td>8.0</td>
 <td>8.0</td>
-<td>10.9</td>
-<td>4.6</td>
+<td>10.8</td>
+<td>4.5</td>
 <td>5.7</td>
-<td>5.2</td>
-<td>8.6</td>
-<td>6.9</td>
+<td>5.1</td>
+<td>8.5</td>
+<td>6.8</td>
 <td>3.4</td>
 <td>5.7</td>
-<td>2.9</td>
+<td>2.8</td>
 <td>4.0</td>
-<td>4.0</td>
+<td>5.1</td>
 <td>2.3</td>
 <td>4.0</td>
 <td>1.1</td>
@@ -170,7 +161,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 4,1,0,2,4,11,14,14,19,8,10,9,15,12,6,10,5,7,7,4,7,2,2,1 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 4,1,0,2,4,11,14,14,19,8,10,9,15,12,6,10,5,7,9,4,7,2,2,1 ] }] };
         
         window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 

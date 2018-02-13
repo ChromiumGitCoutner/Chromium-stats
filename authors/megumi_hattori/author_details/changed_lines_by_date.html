@@ -35,15 +35,6 @@ body { padding-top: 60px; }
 <li class='active'>
 <a href='../../best_authors.html'>Authors</a>
 </li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class='active'>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
-</li>
 </ul>
 </div>
 </div>
@@ -76,7 +67,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Megumi Hattori","type": "spline","data": [ [ 1516594832000,10 ],[ 1516665600000,10 ],[ 1516752000000,10 ],[ 1516864380000,129 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Megumi Hattori","type": "spline","data": [ [ 1516594832000,10 ],[ 1516665600000,10 ],[ 1516752000000,10 ],[ 1516864380000,129 ],[ 1516924800000,129 ],[ 1517011200000,129 ],[ 1517097600000,129 ],[ 1517195497000,225 ],[ 1517211251000,317 ],[ 1517302549000,381 ],[ 1517369733000,480 ],[ 1517443200000,480 ],[ 1517529600000,480 ],[ 1517616000000,480 ],[ 1517702400000,480 ],[ 1517788800000,480 ],[ 1517875200000,480 ],[ 1517971364000,644 ],[ 1518056289000,700 ],[ 1518075670000,721 ] ] }] };
         
         window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -86,7 +77,7 @@ body { padding-top: 60px; }
 
 <div id="charts.changed_lines_by_author_by_date"></div>
 <small>
-<center>5 best authors shown</center>
+<center>5 Igalia Chromium authors shown</center>
 </small>
 </div>
 </div>

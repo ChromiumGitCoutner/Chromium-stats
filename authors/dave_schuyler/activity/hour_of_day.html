@@ -35,15 +35,6 @@ body { padding-top: 60px; }
 <li class='active'>
 <a href='../../best_authors.html'>Authors</a>
 </li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
-</li>
 </ul>
 </div>
 </div>
@@ -133,7 +124,7 @@ body { padding-top: 60px; }
 <td>41</td>
 <td>19</td>
 <td>16</td>
-<td>17</td>
+<td>18</td>
 <td>13</td>
 </tr>
 <tr>
@@ -154,13 +145,13 @@ body { padding-top: 60px; }
 <td>6.9</td>
 <td>9.6</td>
 <td>7.2</td>
-<td>8.9</td>
-<td>9.5</td>
-<td>9.5</td>
-<td>6.1</td>
+<td>8.8</td>
+<td>9.4</td>
+<td>9.4</td>
+<td>6.0</td>
 <td>2.8</td>
 <td>2.4</td>
-<td>2.5</td>
+<td>2.7</td>
 <td>1.9</td>
 </tr>
 </table>
@@ -170,7 +161,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 19,21,14,11,5,0,2,0,1,7,24,66,52,47,65,49,60,64,64,41,19,16,17,13 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 19,21,14,11,5,0,2,0,1,7,24,66,52,47,65,49,60,64,64,41,19,16,18,13 ] }] };
         
         window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 

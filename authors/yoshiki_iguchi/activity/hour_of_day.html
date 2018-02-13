@@ -35,15 +35,6 @@ body { padding-top: 60px; }
 <li class='active'>
 <a href='../../best_authors.html'>Authors</a>
 </li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
-</li>
 </ul>
 </div>
 </div>
@@ -117,7 +108,7 @@ body { padding-top: 60px; }
 <td>15</td>
 <td>15</td>
 <td>17</td>
-<td>18</td>
+<td>19</td>
 <td>12</td>
 <td>8</td>
 <td>11</td>
@@ -144,7 +135,7 @@ body { padding-top: 60px; }
 <td>4.1</td>
 <td>4.1</td>
 <td>4.7</td>
-<td>4.9</td>
+<td>5.2</td>
 <td>3.3</td>
 <td>2.2</td>
 <td>3.0</td>
@@ -161,7 +152,7 @@ body { padding-top: 60px; }
 <td>6.0</td>
 <td>5.5</td>
 <td>5.8</td>
-<td>8.0</td>
+<td>7.9</td>
 </tr>
 </table>
                 <script type="text/javascript">
@@ -170,7 +161,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 17,19,28,15,15,17,18,12,8,11,24,13,12,14,3,2,5,11,11,17,22,20,21,29 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 17,19,28,15,15,17,19,12,8,11,24,13,12,14,3,2,5,11,11,17,22,20,21,29 ] }] };
         
         window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 

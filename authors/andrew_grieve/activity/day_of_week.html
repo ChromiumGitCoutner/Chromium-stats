@@ -35,15 +35,6 @@ body { padding-top: 60px; }
 <li class='active'>
 <a href='../../best_authors.html'>Authors</a>
 </li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
-</li>
 </ul>
 </div>
 </div>
@@ -95,21 +86,21 @@ body { padding-top: 60px; }
 <tr>
 <th>Commits</th>
 <td>3</td>
-<td>139</td>
-<td>213</td>
-<td>258</td>
-<td>208</td>
-<td>180</td>
+<td>140</td>
+<td>216</td>
+<td>261</td>
+<td>209</td>
+<td>186</td>
 <td>7</td>
 </tr>
 <tr>
 <th>Percentage</th>
 <td>0.3</td>
-<td>13.8</td>
+<td>13.7</td>
 <td>21.1</td>
-<td>25.6</td>
-<td>20.6</td>
-<td>17.9</td>
+<td>25.5</td>
+<td>20.5</td>
+<td>18.2</td>
 <td>0.7</td>
 </tr>
 </table>
@@ -119,7 +110,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 3,139,213,258,208,180,7 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 3,140,216,261,209,186,7 ] }] };
         
         window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
 

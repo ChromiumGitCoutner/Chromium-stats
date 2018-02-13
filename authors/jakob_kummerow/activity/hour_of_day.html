@@ -35,15 +35,6 @@ body { padding-top: 60px; }
 <li class='active'>
 <a href='../../best_authors.html'>Authors</a>
 </li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
-</li>
 </ul>
 </div>
 </div>
@@ -120,7 +111,7 @@ body { padding-top: 60px; }
 <td>44</td>
 <td>41</td>
 <td>33</td>
-<td>19</td>
+<td>20</td>
 <td>27</td>
 <td>19</td>
 <td>13</td>
@@ -145,9 +136,9 @@ body { padding-top: 60px; }
 <td>6.8</td>
 <td>8.2</td>
 <td>10.0</td>
-<td>9.4</td>
+<td>9.3</td>
 <td>7.5</td>
-<td>4.3</td>
+<td>4.6</td>
 <td>6.2</td>
 <td>4.3</td>
 <td>3.0</td>
@@ -170,7 +161,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 4,6,31,25,30,36,44,41,33,19,27,19,13,15,15,24,18,17,7,3,1,4,3,3 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 4,6,31,25,30,36,44,41,33,20,27,19,13,15,15,24,18,17,7,3,1,4,3,3 ] }] };
         
         window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 

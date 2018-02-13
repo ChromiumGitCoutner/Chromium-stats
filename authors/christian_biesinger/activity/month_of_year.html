@@ -35,15 +35,6 @@ body { padding-top: 60px; }
 <li class='active'>
 <a href='../../best_authors.html'>Authors</a>
 </li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
-</li>
 </ul>
 </div>
 </div>
@@ -99,7 +90,7 @@ body { padding-top: 60px; }
 </tr>
 <tr>
 <th>Commits</th>
-<td>8</td>
+<td>10</td>
 <td>13</td>
 <td>12</td>
 <td>27</td>
@@ -114,16 +105,16 @@ body { padding-top: 60px; }
 </tr>
 <tr>
 <th>Percentage</th>
-<td>3.0</td>
-<td>4.9</td>
+<td>3.7</td>
+<td>4.8</td>
 <td>4.5</td>
-<td>10.1</td>
-<td>6.4</td>
+<td>10.0</td>
+<td>6.3</td>
 <td>4.1</td>
-<td>12.0</td>
-<td>22.5</td>
+<td>11.9</td>
+<td>22.3</td>
 <td>8.2</td>
-<td>12.7</td>
+<td>12.6</td>
 <td>7.1</td>
 <td>4.5</td>
 </tr>
@@ -134,7 +125,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 8,13,12,27,17,11,32,60,22,34,19,12 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 10,13,12,27,17,11,32,60,22,34,19,12 ] }] };
         
         window.chart_charts.activity_by_month = new Highcharts.Chart(options);
 

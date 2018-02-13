@@ -35,15 +35,6 @@ body { padding-top: 60px; }
 <li class='active'>
 <a href='../../best_authors.html'>Authors</a>
 </li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
-</li>
 </ul>
 </div>
 </div>
@@ -76,7 +67,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "George Burgess","type": "spline","data": [ [ 1514934375000,0 ],[ 1514935107000,0 ],[ 1514937600000,0 ],[ 1515101187000,5 ],[ 1515110400000,5 ],[ 1515196800000,5 ],[ 1515283200000,5 ],[ 1515369600000,5 ],[ 1515456000000,5 ],[ 1515557467000,14 ],[ 1515706364000,74 ],[ 1515715200000,74 ],[ 1515801600000,74 ],[ 1515888000000,74 ],[ 1515974400000,74 ],[ 1516060800000,74 ],[ 1516210668000,85 ],[ 1516233600000,85 ],[ 1516325446000,94 ],[ 1516411902000,98 ],[ 1516492800000,98 ],[ 1516579200000,98 ],[ 1516745400000,122 ],[ 1516773591000,125 ],[ 1516833064000,126 ],[ 1516839298000,127 ],[ 1516844940000,128 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "George Burgess","type": "spline","data": [  ] }] };
         
         window.chart_charts.deletions_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -86,7 +77,7 @@ body { padding-top: 60px; }
 
 <div id="charts.deletions_by_author_by_date"></div>
 <small>
-<center>5 best authors shown</center>
+<center>5 Igalia Chromium authors shown</center>
 </small>
 </div>
 </div>

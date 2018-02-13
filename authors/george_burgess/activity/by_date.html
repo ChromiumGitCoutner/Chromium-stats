@@ -35,15 +35,6 @@ body { padding-top: 60px; }
 <li class='active'>
 <a href='../../best_authors.html'>Authors</a>
 </li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
-</li>
 </ul>
 </div>
 </div>
@@ -87,7 +78,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_date" },"subtitle": {  },"series": [{ "name": "Commits by date","type": "column","data": [ [ 1514934375000,1 ],[ 1514935107000,1 ],[ 1514937600000,0 ],[ 1515101187000,1 ],[ 1515110400000,0 ],[ 1515196800000,0 ],[ 1515283200000,0 ],[ 1515369600000,0 ],[ 1515456000000,0 ],[ 1515557467000,1 ],[ 1515706364000,1 ],[ 1515715200000,0 ],[ 1515801600000,0 ],[ 1515888000000,0 ],[ 1515974400000,0 ],[ 1516060800000,0 ],[ 1516210668000,1 ],[ 1516233600000,0 ],[ 1516325446000,1 ],[ 1516411902000,1 ],[ 1516492800000,0 ],[ 1516579200000,0 ],[ 1516745400000,1 ],[ 1516773591000,1 ],[ 1516833064000,1 ],[ 1516839298000,1 ],[ 1516844940000,1 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_date" },"subtitle": {  },"series": [{ "name": "Commits by date","type": "column","data": [  ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
         
         window.chart_charts.activity_by_date = new Highcharts.StockChart(options);
 

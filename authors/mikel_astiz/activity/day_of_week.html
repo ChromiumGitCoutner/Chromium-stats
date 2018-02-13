@@ -35,15 +35,6 @@ body { padding-top: 60px; }
 <li class='active'>
 <a href='../../best_authors.html'>Authors</a>
 </li>
-<li class=''>
-<a href='../../../files/by_date.html'>Files</a>
-</li>
-<li class=''>
-<a href='../../../lines/by_date.html'>Lines</a>
-</li>
-<li class=''>
-<a href='../../../comments/by_date.html'>Comments</a>
-</li>
 </ul>
 </div>
 </div>
@@ -97,20 +88,20 @@ body { padding-top: 60px; }
 <td>1</td>
 <td>19</td>
 <td>26</td>
-<td>18</td>
+<td>20</td>
 <td>33</td>
-<td>32</td>
+<td>33</td>
 <td>4</td>
 </tr>
 <tr>
 <th>Percentage</th>
-<td>0.8</td>
-<td>14.3</td>
-<td>19.5</td>
-<td>13.5</td>
-<td>24.8</td>
-<td>24.1</td>
-<td>3.0</td>
+<td>0.7</td>
+<td>14.0</td>
+<td>19.1</td>
+<td>14.7</td>
+<td>24.3</td>
+<td>24.3</td>
+<td>2.9</td>
 </tr>
 </table>
                 <script type="text/javascript">
@@ -119,7 +110,7 @@ body { padding-top: 60px; }
           var onload = window.onload;
           window.onload = function(){
             if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 1,19,26,18,33,32,4 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 1,19,26,20,33,33,4 ] }] };
         
         window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
 
