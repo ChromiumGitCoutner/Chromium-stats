@@ -49,8 +49,8 @@ do
     $GIT_STATS generate -p $CHROMIUM_PATH -o $OUTPUT_PATH
 
     # Restore master branch
-    git reset --hard HEAD~10
     git reset --hard refs/original/refs/heads/master
+    git reset --hard HEAD~10
     git clean -dfx
 
    # Upload the result to github.
