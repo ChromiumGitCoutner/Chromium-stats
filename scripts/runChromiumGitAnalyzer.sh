@@ -50,7 +50,10 @@ do
 
     # Restore master branch
     git reset --hard refs/original/refs/heads/master
-    git reset --hard HEAD~10
+    git reset --hard HEAD~3
+    git reflog expire --all --expire-unreachable=0
+    git repack -A -d
+    git prune
     git clean -dfx
 
    # Upload the result to github.
