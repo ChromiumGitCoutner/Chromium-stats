@@ -26,7 +26,7 @@ do
     echo "[$timestamp] Start updating  Chromium trunk, please wait..."
     cd $CHROMIUM_PATH
     git pull origin master:master
-#    git subtree add --prefix=pdfium-log https://pdfium.googlesource.com/pdfium master
+    git subtree add --prefix=pdfium-log https://pdfium.googlesource.com/pdfium master
     git subtree add --prefix=v8-log https://chromium.googlesource.com/v8/v8.git master
     timestamp=$(date +"%T")
     echo "[$timestamp] Finish to update Chromium."
@@ -50,11 +50,11 @@ do
 
     # Restore master branch
     git reset --hard refs/original/refs/heads/master
-    git reset --hard HEAD~1
+    git reset --hard HEAD~2
     git reflog expire --all --expire-unreachable=0
-    git repack -A -d
+#    git repack -A -d
     git prune
-    git clean -dfx
+    git gc --auto
 
    # Upload the result to github.
     cd $OUTPUT_PATH
@@ -68,3 +68,4 @@ do
     echo "- StartTime: $start_timestamp"
     echo "- EndTime: $timestamp"
 done
+
