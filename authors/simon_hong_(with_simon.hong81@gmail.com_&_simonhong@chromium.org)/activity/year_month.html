@@ -29,7 +29,7 @@ body { padding-top: 60px; }
 <li class=''>
 <a href='../../../general.html'>General</a>
 </li>
-<li class=''>
+<li class='active'>
 <a href='../../../activity/by_date.html'>Activity</a>
 </li>
 <li class='active'>
@@ -44,42 +44,126 @@ body { padding-top: 60px; }
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
 <li class=''>
-<a href='commits_by_date.html'>Commits by date</a>
+<a href='by_date.html'>Activity by date</a>
+</li>
+<li class=''>
+<a href='hour_of_day.html'>Hour of day</a>
+</li>
+<li class=''>
+<a href='day_of_week.html'>Day of week</a>
+</li>
+<li class=''>
+<a href='hour_of_week.html'>Hour of week</a>
+</li>
+<li class=''>
+<a href='month_of_year.html'>Month of year</a>
+</li>
+<li class=''>
+<a href='year.html'>Year</a>
 </li>
 <li class='active'>
-<a href='changed_lines_by_date.html'>Changed lines by date</a>
-</li>
-<li class=''>
-<a href='insertions_by_date.html'>Lines added by date</a>
-</li>
-<li class=''>
-<a href='deletions_by_date.html'>Lines deleted by date</a>
+<a href='year_month.html'>Year and month</a>
 </li>
 </ul>
 <div class='tab-content'>
 <div class='tab-pane active'>
-<div class='page-header'>
-<h1 class='pagination-centered'>Changed lines by date</h1>
+<div class='page-header pagination-centered'>
+<h1>Year and month</h1>
+<h3>Simon Hong (with simon.hong81@gmail.com & simonhong@chromium.org) &lt;simonhong@igalia.com&gt;</h3>
 </div>
-                <script type="text/javascript">
-        (function() {
-
-          var onload = window.onload;
-          window.onload = function(){
-            if (typeof onload == "function") onload();
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Diego Pino","type": "spline","data": [ [ 1392232187000,236062 ] ] }] };
-        
-        window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
-
-          };
-                })()
-        </script>
-
-<div id="charts.changed_lines_by_author_by_date"></div>
-<small>
-<center>5 Igalia Chromium authors shown</center>
-</small>
 </div>
+<table class='table table-bordered table-condensed'>
+<tr>
+<th></th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+<th>Apr</th>
+<th>May</th>
+<th>Jun</th>
+<th>Jul</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>Nov</th>
+<th>Dec</th>
+</tr>
+<tr>
+<th>2012</th>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr>
+<th>2013</th>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>8</td>
+<td>9</td>
+<td>8</td>
+<td>19</td>
+<td>12</td>
+<td>7</td>
+</tr>
+<tr>
+<th>2014</th>
+<td>11</td>
+<td>4</td>
+<td>5</td>
+<td>3</td>
+<td>10</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
+</tr>
+<tr>
+<th>2015</th>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>2017</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</table>
 </div>
 </div>
 
