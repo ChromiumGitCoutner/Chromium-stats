@@ -1,72 +1,127 @@
 #!/bin/bash
 
-# Define pathes for this tool and Chromium source.
-CHROMIUM_PATH=$HOME/chromium-stats/chromium/Chromium/
-OUTPUT_PATH=$HOME/github/Igalia-Chromium-Stats/igalia-cr-stats
-GIT_STATS=$HOME/github/Igalia-Chromium-Stats/igalia_git_stats/bin/git_stats
+# environment #######################################################
 
-export IGALIA_EMAIL="@igalia.com"
-export GYUYOUNG_LGE_EMAIL="gyuyoung.kim@lge.com"
-export GYUYOUNG_SAMSUNG_EMAIL="gyuyoung.kim@samsung.com"
-export JULIE_SAMSUNG_EMAIL="je_julie.kim@samsung.com"
-export DAPE_LGE_EMAIL="jose.dapena@lge.com"
-export MAKSIM_INTEL_EMAIL="maksim.sisov@intel.com"
-export TONIKITOO_WEBKIT_EMAIL="tonikitoo@webkit.org"
-export MROBINSON_WEBKIT_EMAIL="mrobinson@webkit.org"
-export XAN_WEBKIT_EMAIL="xan@webkit.org"
-export ALEX_WEBKIT_EMAIL="alex@webkit.org"
-export FRED_FREE_EMAIL="fred.wang@free.fr"
-export SIMON_EMAIL="simon.hong81@gmail.com"
-export SIMON_CHROMIUM_EMAIL="simonhong@chromium.org"
+[ -z ${CHROMIUM_PATH} ] && CHROMIUM_PATH=${HOME}/chromium-stats/chromium/Chromium/
+[ -z ${IGALIA_CHROMIUM_CONTRIB_STATS_OUTPUT} ] && IGALIA_CHROMIUM_CONTRIB_STATS_OUTPUT=${HOME}/github/Igalia-Chromium-Stats/igalia-cr-stats
+[ -z ${GIT_STATS_PATH} ] && GIT_STATS_PATH=${HOME}/github/Igalia-Chromium-Stats/igalia_git_stats/bin/git_stats
+[ -z ${IGALIA_CHROMIUM_CONTRIB_STATS_DAEMON} ] && IGALIA_CHROMIUM_CONTRIB_STATS_DAEMON=1
+[ -z ${IGALIA_CHROMIUM_CONTRIB_STATS_PIDFILE} ] && PIDFILE=${HOME}/igalia-chromium-contribution-stats.pid
+[ -z ${IGALIA_CHROMIUM_CONTRIB_STATS_PUSH} ] && IGALIA_CHROMIUM_CONTRIB_STATS_PUSH=1
+[ -z ${IGALIA_CHROMIUM_CONTRIB_STATS_WHITELIST} ] && IGALIA_CHROMIUM_CONTRIB_STATS_WHITELIST=(
+    @igalia.com
+    gyuyoung.kim@lge.com
+    gyuyoung.kim@samsung.com
+    je_julie.kim@samsung.com
+    jose.dapena@lge.com
+    maksim.sisov@intel.com
+    tonikitoo@webkit.org
+    mrobinson@webkit.org
+    xan@webkit.org
+    alex@webkit.org
+    fred.wang@free.fr
+    simon.hong81@gmail.com
+    simonhong@chromium.org
+)
+
+
+# functions #########################################################
+function join_by { local d=$1; shift; echo -n "$1"; shift; printf "%s" "${@/#/$d}"; }
+
+
+function git_reset {
+    git reset --hard origin
+    git reflog expire --all --expire-unreachable=0
+    # git repack -A -d
+    git prune
+    git gc --auto
+}
+
+
+function pidfile { 
+    if [ -f ${IGALIA_CHROMIUM_CONTRIB_STATS_PIDFILE} ]
+    then
+        PID=$(cat ${IGALIA_CHROMIUM_CONTRIB_STATS_PIDFILE})
+        ps -p ${PID} > /dev/stderr
+        if [ $? -eq 0 ]
+        then
+            echo "Process already running"
+            exit 1
+        else
+            ## Process not found assume not running
+            echo $$ > ${IGALIA_CHROMIUM_CONTRIB_STATS_PIDFILE}
+            if [ $? -ne 0 ]
+            then
+                echo "Could not create PID file"
+                exit 1
+            fi
+        fi
+    else
+        echo $$ > ${IGALIA_CHROMIUM_CONTRIB_STATS_PIDFILE}
+        if [ $? -ne 0 ]
+        then
+            echo "Could not create PID file"
+            exit 1
+        fi
+    fi
+}
+
+
+function quit {
+    rm ${IGALIA_CHROMIUM_CONTRIB_STATS_PIDFILE}
+    exit 0
+}
+
+
+# main ##############################################################
+
+pidfile > /dev/stderr
+export WHITELIST=$(join_by '\|' "${IGALIA_CHROMIUM_CONTRIB_STATS_WHITELIST[@]}")
 
 while :
 do
     # Update Chromium source code.
     start_timestamp=$(date +"%T")
-    timestamp=$start_timestamp
-    echo "[$timestamp] Start updating  Chromium trunk, please wait..."
-    cd $CHROMIUM_PATH
-    git pull origin master:master
-    git subtree add --prefix=pdfium-log https://pdfium.googlesource.com/pdfium master
-    git subtree add --prefix=v8-log https://chromium.googlesource.com/v8/v8.git master
-    timestamp=$(date +"%T")
-    echo "[$timestamp] Finish to update Chromium."
 
-   # Start to analyze commit counts.
+    logger -is "Start updating  Chromium trunk, please wait ..." 2>&1
+    cd ${CHROMIUM_PATH}
+    git_reset > /dev/stderr
+    git pull origin master:master > /dev/stderr
+    git subtree add --prefix=pdfium-log https://pdfium.googlesource.com/pdfium master > /dev/stderr
+    git subtree add --prefix=v8-log https://chromium.googlesource.com/v8/v8.git master > /dev/stderr
+    logger -is "Finish to update Chromium." 2>&1
+
+    # Start to analyze commit counts.
     now="$(date +'%Y-%m-%d')"
-    timestamp=$(date +"%T")
-    echo "[$timestamp] Starting checking Igalia commits until $now, please wait..."
+    logger -is "Checking Igalia commits until ${now}, please wait..." 2>&1
     git filter-branch -f --commit-filter '
-        if echo "$GIT_AUTHOR_EMAIL" | grep -q "$IGALIA_EMAIL\|$GYUYOUNG_LGE_EMAIL\|$DAPE_LGE_EMAIL\|$MAKSIM_INTEL_EMAIL\|$TONIKITOO_WEBKIT_EMAIL\|$GYUYOUNG_SAMSUNG_EMAIL\|$FRED_FREE_EMAIL\|$MROBINSON_WEBKIT_EMAIL\|$XAN_WEBKIT_EMAIL\|$ALEX_WEBKIT_EMAIL\|$JULIE_SAMSUNG_EMAIL\|$SIMON_EMAIL\|$SIMON_CHROMIUM_EMAIL";
+	if echo "$GIT_AUTHOR_EMAIL" | grep -q "${WHITELIST}";
         then
             git commit-tree "$@";
         else
             skip_commit "$@";
-        fi' HEAD
+        fi' HEAD > /dev/stderr
 
-    timestamp=$(date +"%T")
-    echo "[$timestamp] Finish to find Igalia commits."
+    logger -is "Finish to find Igalia commits." 2>&1
+    ${GIT_STATS_PATH} generate -p ${CHROMIUM_PATH} -o ${IGALIA_CHROMIUM_CONTRIB_STATS_OUTPUT} > /dev/stderr
 
-    $GIT_STATS generate -p $CHROMIUM_PATH -o $OUTPUT_PATH
+    # Upload the result to github.
+    if [ "${IGALIA_CHROMIUM_CONTRIB_STATS_PUSH}" -eq "1" ]
+    then
+        cd ${IGALIA_CHROMIUM_CONTRIB_STATS_OUTPUT}
+        git add . > /dev/stderr
+        git commit -m "Update the new result by bot" > /dev/stderr
+        git fetch origin master > /dev/stderr
+        git rebase origin/master > /dev/stderr
+        git push origin master:master > /dev/stderr
+    fi
 
-    # Restore master branch
-    git reset --hard refs/original/refs/heads/master
-    git reset --hard HEAD~2
-    git reflog expire --all --expire-unreachable=0
-#    git repack -A -d
-    git prune
-    git gc --auto
+    end_timestamp="$(date +'%Y-%m-%d')"
+    logger -is "Finish to upload new result" 2>&1
+    logger -is "StartTime: ${start_timestamp}" 2>&1
+    logger -is "EndTime: ${end_timestamp}" 2>&1
 
-   # Upload the result to github.
-    cd $OUTPUT_PATH
-    git add .
-    git commit -m "Update the new result by bot"
-    git fetch origin master
-    git rebase origin/master
-    git push origin master:master
-    timestamp=$(date +"%T")
-    echo "[$timestamp] Finish to upload new result!"
-    echo "- StartTime: $start_timestamp"
-    echo "- EndTime: $timestamp"
+    [ ${IGALIA_CHROMIUM_CONTRIB_STATS_DAEMON} -eq "0" ] && quit
 done
 
+quit
