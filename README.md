@@ -66,30 +66,29 @@ All the sensitive variables can be redefined with `export` bash definitions.
 
 ## Settinng igalia-chromium-contribution-stats as a cronjob
 
-(`WORKDIR="/var/www")
+(`WORKDIR="/var/www"`)
 
 * Create the script which setup the enviroment
-  ```
-cat << EOF > /usr/bin/update-igalia-chromium-contribution-stats
-export IGALIA_CHROMIUM_CONTRIB_STATS_PIDFILE=/var/www/igalia-chromium-contribution-stats/pid
-export IGALIA_CHROMIUM_CONTRIB_STATS_PUSH=0
-export IGALIA_CHROMIUM_CONTRIB_STATS_DAEMON=0
-export IGALIA_CHROMIUM_CONTRIB_STATS_OUTPUT=/var/www/igalia-chromium-contribution-stats/out
-export CHROMIUM_PATH=/var/www/chromium/src
-export GIT_STATS_PATH=/var/www/igalia_git_stats/bin/git_stats
-/var/www/igalia-chromium-contribution-stats/scripts/runChromiumGitAnalyzer.sh
-EOF
-chmod +x /usr/bin/update-igalia-chromium-contribution-stats
+  ```sh
+  cat << EOF > /usr/bin/update-igalia-chromium-contribution-stats
+  export IGALIA_CHROMIUM_CONTRIB_STATS_PIDFILE=/var/www/igalia-chromium-contribution-stats/pid
+  export IGALIA_CHROMIUM_CONTRIB_STATS_PUSH=0
+  export IGALIA_CHROMIUM_CONTRIB_STATS_DAEMON=0
+  export IGALIA_CHROMIUM_CONTRIB_STATS_OUTPUT=/var/www/igalia-chromium-contribution-stats/out
+  export CHROMIUM_PATH=/var/www/chromium/src
+  export GIT_STATS_PATH=/var/www/igalia_git_stats/bin/git_stats
+  /var/www/igalia-chromium-contribution-stats/scripts/runChromiumGitAnalyzer.sh
+  EOF
+  chmod +x /usr/bin/update-igalia-chromium-contribution-stats
   ```
 
 * Configuring the crontask (every days at 1:05)
-  ```
-cat << EOF > /etc/cron.d/update-igalia-chromium-contribution-stats
-PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-MAILTO=root
-
-5 1 * * * root /usr/bin/update-igalia-chromium-contribution-stats  2>/dev/null
-EOF
+  ```sh
+  cat << EOF > /etc/cron.d/update-igalia-chromium-contribution-stats
+  PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+  MAILTO=root
+  5 1 * * * root /usr/bin/update-igalia-chromium-contribution-stats  2>/dev/null
+  EOF
   ```
 
 Note that `runChromiumGitAnalyzer` controls if there is any other instance 
@@ -110,16 +109,16 @@ The enviroment is quite similar to the cronjob approaching. You only need
 set the `runChromiumGitAnalyzer.sh` as a daemon (`IGALIA_CHROMIUM_CONTRIB_STATS_DAEMON=1`):
 
   ```
-cat << EOF > /usr/bin/update-igalia-chromium-contribution-stats
-export IGALIA_CHROMIUM_CONTRIB_STATS_PIDFILE=/var/www/igalia-chromium-contribution-stats/pid
-export IGALIA_CHROMIUM_CONTRIB_STATS_PUSH=0
-export IGALIA_CHROMIUM_CONTRIB_STATS_DAEMON=1
-export IGALIA_CHROMIUM_CONTRIB_STATS_OUTPUT=/var/www/igalia-chromium-contribution-stats/out
-export CHROMIUM_PATH=/var/www/chromium/src
-export GIT_STATS_PATH=/var/www/igalia_git_stats/bin/git_stats
-/var/www/igalia-chromium-contribution-stats/scripts/runChromiumGitAnalyzer.sh
-EOF
-chmod +x /usr/bin/update-igalia-chromium-contribution-stats
+  cat << EOF > /usr/bin/update-igalia-chromium-contribution-stats
+  export IGALIA_CHROMIUM_CONTRIB_STATS_PIDFILE=/var/www/igalia-chromium-contribution-stats/pid
+  export IGALIA_CHROMIUM_CONTRIB_STATS_PUSH=0
+  export IGALIA_CHROMIUM_CONTRIB_STATS_DAEMON=1
+  export IGALIA_CHROMIUM_CONTRIB_STATS_OUTPUT=/var/www/igalia-chromium-contribution-stats/out
+  export CHROMIUM_PATH=/var/www/chromium/src
+  export GIT_STATS_PATH=/var/www/igalia_git_stats/bin/git_stats
+  /var/www/igalia-chromium-contribution-stats/scripts/runChromiumGitAnalyzer.sh
+  EOF
+  chmod +x /usr/bin/update-igalia-chromium-contribution-stats
   ```
 
 * Run it with screen:
@@ -137,7 +136,8 @@ Set to `0` if you don't wish that. In oppsite, you must ensure that
 
  
 ## Replace ssh key files in .ssh for auto result update
- ```sh
+
+```sh
 $ mv id_rsa ~/.ssh
 $ mv id_rsa.pub ~/.ssh
 ```
