@@ -22,6 +22,7 @@
     fred.wang@free.fr
     simon.hong81@gmail.com
     simonhong@chromium.org
+    rob.buis@samsung.com
 )
 
 
@@ -85,7 +86,7 @@ do
 
     logger -is "Start updating  Chromium trunk, please wait ..." 2>&1
     cd ${CHROMIUM_PATH}
-    git_reset > /dev/stderr
+    git checkout -B master origin/master > /dev/stderr
     git pull origin master:master > /dev/stderr
     git subtree add --prefix=pdfium-log https://pdfium.googlesource.com/pdfium master > /dev/stderr
     git subtree add --prefix=v8-log https://chromium.googlesource.com/v8/v8.git master > /dev/stderr
@@ -116,7 +117,7 @@ do
         git push origin master:master > /dev/stderr
     fi
 
-    end_timestamp="$(date +'%Y-%m-%d')"
+    end_timestamp="$(date +'%T')"
     logger -is "Finish to upload new result" 2>&1
     logger -is "StartTime: ${start_timestamp}" 2>&1
     logger -is "EndTime: ${end_timestamp}" 2>&1
