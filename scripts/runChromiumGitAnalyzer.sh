@@ -87,6 +87,7 @@ do
     logger -is "Start updating  Chromium trunk, please wait ..." 2>&1
     cd ${CHROMIUM_PATH}
     git checkout -B master origin/master > /dev/stderr
+    git_reset > /dev/stderr
     git pull origin master:master > /dev/stderr
     git subtree add --prefix=pdfium-log https://pdfium.googlesource.com/pdfium master > /dev/stderr
     git subtree add --prefix=v8-log https://chromium.googlesource.com/v8/v8.git master > /dev/stderr
