@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 # environment #######################################################
 
@@ -32,6 +32,7 @@ function join_by { local d=$1; shift; echo -n "$1"; shift; printf "%s" "${@/#/$d
 
 function git_reset {
     git reset --hard origin
+    git clean -f
     git reflog expire --all --expire-unreachable=0
     # git repack -A -d
     git prune
@@ -86,14 +87,23 @@ do
 
     logger -is "Start updating  Chromium trunk, please wait ..." 2>&1
     cd ${CHROMIUM_PATH}
-    git checkout -B master origin/master > /dev/stderr
     git_reset > /dev/stderr
     git pull origin master:master > /dev/stderr
+    git submodule foreach --recursive git reset --hard
+    git submodule foreach --recursive git clean -fd
+    git submodule init
+    git submodule sync --recursive
+    git submodule update --init --recursive
     git subtree add --prefix=pdfium-log https://pdfium.googlesource.com/pdfium master > /dev/stderr
+    git add pdfium-log
+    git commit -m "add pdfium-log"
     git subtree add --prefix=v8-log https://chromium.googlesource.com/v8/v8.git master > /dev/stderr
+    git add v8-log
+    git commit -m "add v8-log"
     logger -is "Finish to update Chromium." 2>&1
 
     # Start to analyze commit counts.
+    cp ../.mailmap  .
     now="$(date +'%Y-%m-%d')"
     logger -is "Checking Igalia commits until ${now}, please wait..." 2>&1
     git filter-branch -f --commit-filter '
