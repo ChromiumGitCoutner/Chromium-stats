@@ -23,6 +23,9 @@
     simon.hong81@gmail.com
     simonhong@chromium.org
     rob.buis@samsung.com
+    mario@webkit.org
+    mario@endlessm.com
+    mario.prada@samsung.com
 )
 
 
