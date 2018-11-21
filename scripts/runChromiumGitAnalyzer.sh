@@ -26,6 +26,9 @@
     mario@webkit.org
     mario@endlessm.com
     mario.prada@samsung.com
+    dehrenberg@chromium.org
+    littledan@chromium.org
+    henrique.ferreiro@gmail.com
 )
 
 
