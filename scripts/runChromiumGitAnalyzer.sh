@@ -110,7 +110,7 @@ do
     logger -is "Finish to update Chromium." 2>&1
 
     # Start to analyze commit counts.
-    cp ../mailmap  .
+    cp ../mailmap  ./mailmap
     now="$(date +'%Y-%m-%d')"
     logger -is "Checking Igalia commits until ${now}, please wait..." 2>&1
     git filter-branch -f --commit-filter '
