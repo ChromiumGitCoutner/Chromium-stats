@@ -30,6 +30,9 @@
     dehrenberg@chromium.org
     littledan@chromium.org
     henrique.ferreiro@gmail.com
+    myid.o.shin@gmail.com
+    myid.shin@chromium.org
+    myid.shin@samsung.com
 )
 
 
