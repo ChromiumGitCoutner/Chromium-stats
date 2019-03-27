@@ -33,6 +33,7 @@
     myid.o.shin@gmail.com
     myid.shin@chromium.org
     myid.shin@samsung.com
+    cathiechen@tencent.com
 )
 
 
